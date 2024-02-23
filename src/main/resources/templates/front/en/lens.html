@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/en/common :: enHeadSource">
+</head>
+
+<body>
+
+    <div class="preloader" th:replace="fragments/en/common :: enPreloader">
+    </div>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header-area">
+                    <div class="logo-area">
+                        <a href="/en/index">
+                           <img src="/front/en/assets/img/logo.png" alt="Nav Logo">
+                        </a>
+                    </div>
+                    <nav class="navbar navbar-area navbar-expand-lg sticky-navbar">
+                        <div class="container nav-container">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#fortis_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="cross-menu">
+                                    <span class="bar1"></span>
+                                    <span class="bar2"></span>
+                                    <span class="bar3"></span>
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="fortis_main_menu">
+                                <ul class="navbar-nav">
+                                    <li>
+                                        <a class="move-page" href="/en/index">Home</a>
+                                    </li>
+									 <li>
+                                        <a class="move-page" href="/en/choice">The Moment You Choose Su Yonsei!</a>
+                                    </li>
+                                    <li>
+                                        <a class="move-page" href="/en/equipments">Equipments
+                                            Center</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a class="center" href="javascript:void(0)">Surgery Center
+                                            <ul class="sub-menu">
+                                                <li><a class="move-page" href="/en/smile"># SMILE LASIK</a></li>
+                                                <li><a class="move-page" href="/en/smilePro"># SMILE PRO</a></li>
+                                                <li><a class="move-page" href="/en/keratoconus"># Keratoconus</a></li>
+                                                <li><a class="move-page" href="/en/lens"># Lens Implantation
+                                                        Surgery</a></li>
+                                                <li><a class="move-page" href="/en/lasek"># LASEK</a></li>
+                                                <li><a class="move-page" href="/en/lasik"># LASIK</a></li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="breadcrumb-area padding-100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="breadcrumb-content">
+                        <div class="col-12 px-0">
+                            <div class="page-title">
+                                <h1 class="heading-1">SU Yonsei's Vision Correction Surgery Center</h1>
+                                <h6 class="heading-6">This surgery serves as a good alternative to laser surgery for
+                                    those with thin corneas, irregular shapes, or extreme refractive errors that make
+                                    corneal surgery undesirable.</h6>
+                            </div>
+                        </div>
+                        <ul class="page-list">
+                            <li><a href="/en/index">Home</a></li>
+                            <li>Surgery Center</li>
+                            <li>Phakic Intraocular Lens implantation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="teeth-canel padding-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="canel-content-area">
+                            <div class="common-title padding-bottom-20">
+                                <h2 class="heading line-none">The Ultimate Destination for Lens Implantation: SU Yonsei!
+                                </h2>
+                            </div>
+                            <p>This surgery serves as a good alternative to laser surgery for those with thin corneas,
+                                irregular shapes, or extreme refractive errors that make corneal surgery undesirable. As
+                                the procedure neither cuts the cornea nor alters the eye's internal structure, it is the
+                                most physiological option available. It also offers excellent nighttime visual acuity.
+                                The lens can be inserted either anteriorly or posteriorly depending on the required
+                                positioning. It has very low regression rate and you can maintain excellent vision for
+                                life.
+                            </p>
+                            <!-- video popup toggler -->
+                            <div class="check-box-area">
+                                <ul class="check-box">
+                                    <li>- Our medical team instructs other refractive surgeons on lens implantation
+                                        procedures.</li>
+                                    <li>- Expertise in recommending the most suitable lens, tailored to each individual
+                                        eye.</li>
+                                    <li>- Comprehensive care from pre-operative examination, iridotomy procedure, to
+                                        post-operative</li>
+                                    <li>- management by a dedicated one-on-one care of the surgeon.</li>
+                                    <li>- Capable of managing all types of complications.</li>
+                                    <li>- Continuous post-surgery monitoring including endothelial cells, lens, and
+                                        retina examination.</li>
+                                    <li>- Recognized as a top-tier institution for intraocular lens implantation.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 pr-lg-0">
+                        <div class="canel-img-area">
+                            <img src="/front/en/assets/img/surgery/2.png" alt="img">
+                            <p>* <strong>Anterior Lens (Artisan/Artiflex)</strong> Best Skill, Honor Awards, Global
+                                Instructor, World’s Great Surgeon
+                            </p>
+                            <p>* <strong>Posterior Lens (EVO+ICL)</strong> Global Expert Surgeon, World Class Pioneer,
+                                Officially Certified for EVO+Visian ICL with over 1,000 cases
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--// Teeth-canel Section End Here-->
+
+        <!-- Our Other Service Section Start Here-->
+        <section class="our-mission-section mb-5" id="lens-tab">
+            <div class="container">
+                <div class="row">
+                    <!--Common Title-->
+                    <div class="col-12">
+                        <div class="common-title padding-bottom-20">
+                            <h2 class="heading line-left m-auto">Lens</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <!--Mission Tab Area-->
+                        <div class="mission-tab-area padding-top-60">
+                            <!-- <div class="col-lg-6 col-md-12"> -->
+                            <div class="tab-navbar-area">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#artisan"
+                                            role="tab" aria-controls="home" aria-selected="true">Artisan Lens</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#artiflex"
+                                            role="tab" aria-controls="profile" aria-selected="false">Artiflex Lens</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#evo" role="tab"
+                                            aria-controls="contact" aria-selected="false">EVO+ICL</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#echo" role="tab"
+                                            aria-controls="contact" aria-selected="false">ECHO<br>(Exhaling
+                                            Contact lens by High-tech Operation)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content-area">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="artisan" role="tabpanel"
+                                        aria-labelledby="home-tab">
+                                        <div class="tab-content">
+                                            <div class="col-lg-8 col-md-12">
+                                                <div class="paragraph-wrap">
+                                                    <div class="paragraph-area padding-30">
+                                                        <div class="check-box-area">
+                                                            <ul class="check-box">
+                                                                <li>- Minimized complications</li>
+                                                                <li>- Correction of extreme myopia and hyperopia</li>
+                                                                <li>- First intraocular lens to receive FDA approval
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                                <div class="mission-img-area">
+                                                    <img src="/front/en/assets/img/surgery/55.png" alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="artiflex" role="tabpanel"
+                                        aria-labelledby="profile-tab">
+                                        <div class="tab-content">
+                                            <div class="col-lg-8 col-md-12">
+                                                <div class="paragraph-wrap">
+                                                    <div class="paragraph-area padding-30">
+                                                        <div class="check-box-area">
+                                                            <ul class="check-box">
+                                                                <li>- Minimized complications and rapid recovery</li>
+                                                                <li>- Intraocular lens designed minimize nighttime
+                                                                    glare.</li>
+                                                                <li>- Iris-fixated, providing stability without
+                                                                    astigmatic axis shifts</li>
+                                                                <li>- Safe lens removal process</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                                <div class="mission-img-area">
+                                                    <img src="/front/en/assets/img/surgery/66.png" alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="evo" role="tabpanel" aria-labelledby="contact-tab">
+                                        <div class="tab-content">
+                                            <div class="col-lg-8 col-md-12">
+                                                <div class="paragraph-wrap">
+                                                    <div class="paragraph-area padding-30">
+                                                        <div class="check-box-area">
+                                                            <ul class="check-box">
+                                                                <li>- Expanded optical range from -0.5 to -14 diopters,
+                                                                    with an optical zone 10% larger, reducing nighttime
+                                                                    glare</li>
+                                                                <li>- Incision size under 3mm, enabling recovery within
+                                                                    a day</li>
+                                                                <li>- Over 20 years of use in more than 1 million eyes,
+                                                                    making it the most advanced lens across generations
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                                <div class="mission-img-area">
+                                                    <img src="/front/en/assets/img/surgery/77.png" alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="echo" role="tabpanel" aria-labelledby="contact-tab">
+                                        <div class="tab-content">
+                                            <div class="col-lg-8 col-md-12">
+                                                <div class="paragraph-wrap">
+                                                    <div class="paragraph-area padding-30">
+                                                        <div class="check-box-area">
+                                                            <ul class="check-box">
+                                                                <li>- Comfortable and safe aqueous flow</li>
+                                                                <li>- Upgraded support structure and technology for
+                                                                    comfortable vision correction</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                                <div class="mission-img-area">
+                                                    <img src="/front/en/assets/img/surgery/88.png" alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--// Our Other Service Section End Here-->
+
+
+
+        <!--Rooth Canal Price Section Start Here-->
+        <section class="rooth-canal-price-section mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="price-area" style="box-shadow:0px 5px 5px rgba(0,0,0,0.2);">
+                        <div class="left-column">
+                            <div class="price">Astigmatism-Correcting Lenses</div>
+                            <div class="common-title">
+                                <h6 class="heading-5 line-none">Toric lenses are a type of intraocular lens specifically
+                                    designed to accurately correct astigmatism. This revolutionary surgery involves the
+                                    implantation of a lens etched with measurements for both myopia and astigmatism,
+                                    allowing for the correction of high degrees of both in a single operation.
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="right-column">
+                            <ul>
+                                <li>
+                                    <span class="left">Toric Artiflex</span>
+                                    <span class="right">These options set the standard for rapid recovery and stable
+                                        astigmatism correction.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="left">Toric Artisan</span>
+                                    <span class="right">They are the go-to choice for cases where combined myopia and
+                                        astigmatism exceed 15 diopters.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="left">EVO+Toric ICL</span>
+                                    <span class="right">These lenses enable the simultaneous correction of high degrees
+                                        of both conditions without the need for iridotomy.</span>
+                                </li>
+                                <li>
+                                    <span class="left">Bioptics</span>
+                                    <span class="right">Additionally, LASIK or LASEK can be performed as a secondary
+                                        operation for further vision correction.
+
+                                    </span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="blog-page-content padding-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="blog-post-single-item">
+                            <div class="col-12">
+                                <div class="common-title padding-bottom-20">
+                                    <h2 class="heading line-left m-auto">Toric Artiflex</h2>
+                                </div>
+                            </div>
+                            <div class="thumb mt-5">
+                                <img src="/front/en/assets/img/eng/lens01.png" style="box-shadow:0px 5px 5px rgba(0,0,0,0.2);">
+                            </div>
+
+                        </div>
+                        <!--// Blog Single Item-->
+
+                        <div class="blog-post-single-item mt-5">
+                            <div class="col-12">
+                                <div class="common-title padding-bottom-20">
+                                    <h2 class="heading line-left m-auto">EVO+Toric ICL</h2>
+                                </div>
+                            </div>
+                            <div class="thumb mt-5">
+                                <img src="/front/en/assets/img/eng/lens02.png" style="box-shadow:0px 5px 5px rgba(0,0,0,0.2);">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// Google Map End-->
+
+    </main>
+    <!--Main Area End Here-->
+
+    <th:block th:replace="fragments/en/common :: enFooter"></th:block>
+</body>
+
+</html>

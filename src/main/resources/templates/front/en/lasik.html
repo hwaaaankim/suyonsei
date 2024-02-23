@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/en/common :: enHeadSource">
+</head>
+
+<body>
+
+    <div class="preloader" th:replace="fragments/en/common :: enPreloader">
+    </div>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header-area">
+                    <div class="logo-area">
+                        <a href="/en/index">
+                           <img src="/front/en/assets/img/logo.png" alt="Nav Logo">
+                        </a>
+                    </div>
+                    <nav class="navbar navbar-area navbar-expand-lg sticky-navbar">
+                        <div class="container nav-container">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#fortis_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="cross-menu">
+                                    <span class="bar1"></span>
+                                    <span class="bar2"></span>
+                                    <span class="bar3"></span>
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="fortis_main_menu">
+                                <ul class="navbar-nav">
+                                    <li>
+                                        <a class="move-page" href="/en/index">Home</a>
+                                    </li>
+									 <li>
+                                        <a class="move-page" href="/en/choice">The Moment You Choose Su Yonsei!</a>
+                                    </li>
+                                    <li>
+                                        <a class="move-page" href="/en/equipments">Equipments
+                                            Center</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a class="center" href="javascript:void(0)">Surgery Center
+                                            <ul class="sub-menu">
+                                                <li><a class="move-page" href="/en/smile"># SMILE LASIK</a></li>
+                                                <li><a class="move-page" href="/en/smilePro"># SMILE PRO</a></li>
+                                                <li><a class="move-page" href="/en/keratoconus"># Keratoconus</a></li>
+                                                <li><a class="move-page" href="/en/lens"># Lens Implantation
+                                                        Surgery</a></li>
+                                                <li><a class="move-page" href="/en/lasek"># LASEK</a></li>
+                                                <li><a class="move-page" href="/en/lasik"># LASIK</a></li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <section class="breadcrumb-area padding-100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="breadcrumb-content">
+                        <div class="col-12 px-0">
+                            <div class="page-title">
+                                <h1 class="heading-1">SU Yonsei's Vision Correction Surgery Center</h1>
+                                <h6 class="heading-6">LASIK is a surgical procedure that employs laser technology to
+                                    create a corneal flap, including the epithelium and a portion of the stroma.
+                                </h6>
+                            </div>
+                        </div>
+                        <ul class="page-list">
+                            <li><a href="/en/index">Home</a></li>
+                            <li>Surgery Center</li>
+                            <li>LASIK</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="teeth-canel padding-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="canel-content-area">
+                            <div class="common-title padding-bottom-20">
+                                <h2 class="heading line-none">LASIK</h2>
+                            </div>
+                            <p>LASIK is a surgical procedure that employs laser technology to create a corneal flap,
+                                including the epithelium and a portion of the stroma.
+                                The laser is then applied to the stroma to correct vision, after which the corneal flap
+                                is repositioned.
+
+                            </p>
+                            <!-- video popup toggler -->
+                            <div class="check-box-area">
+                                <ul class="check-box">
+                                    <li>- Patients generally experience a foreign-body sensation or slight discomfort
+                                        for 3-4 hours post-operation. However, most can return to their daily activities
+                                        within a day, making LASIK one of the most convenient surgical options with
+                                        excellent vision improvement as soon as the day after the procedure.</li>
+                                    <li>- At SU Yonsei, we utilize a judicious combination of our three top-tier laser
+                                        platforms as well as Sirius, Vario, and Oculyzer diagnostic tools. Our aim is to
+                                        exceed your maximum corrected visual acuity with glasses, focusing on achieving
+                                        superior uncorrected visual outcomes.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 pr-lg-0">
+                        <div class="canel-img-area">
+                            <img src="/front/en/assets/img/eng/lasik01.png" alt="img">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--// Teeth-canel Section End Here-->
+
+        <!-- Our Other Service Section Start Here-->
+        <section class="our-mission-section mb-5" id="lens-tab">
+            <div class="container">
+                <div class="row">
+                    <!--Common Title-->
+                    <div class="col-12">
+                        <div class="common-title padding-bottom-20">
+                            <h2 class="heading line-left m-auto">LASIK</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <!--Mission Tab Area-->
+                        <div class="mission-tab-area padding-top-60">
+                            <!-- <div class="col-lg-6 col-md-12"> -->
+                            <div class="tab-navbar-area" style="width:40%;">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist"
+                                    style="justify-content: space-around;">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#artisan"
+                                            role="tab" aria-controls="home" aria-selected="true">Premium Custom S
+                                            VisuLASIK</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#artiflex"
+                                            role="tab" aria-controls="profile" aria-selected="false">Premium Custom Q
+                                            VisuLASIK</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="tab-content-area">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="artisan" role="tabpanel"
+                                        aria-labelledby="home-tab">
+                                        <div class="tab-content">
+                                            <div class="col-lg-6 col-md-12">
+                                                <div class="paragraph-wrap">
+                                                    <div class="paragraph-area padding-30">
+                                                        <div class="check-box-area">
+                                                            <ul class="check-box">
+                                                                <li>- Utilizing Schwind's latest Amaris RED SmartPulse
+                                                                    Technology, our VisuLASIK procedure offers
+                                                                    remarkable precision and finesse.
+                                                                </li>
+                                                                <li>- The Amaris RED Laser receives comprehensive data,
+                                                                    including angle kappa, iris shape, higher-order
+                                                                    aberrations, and corneal curvature, to execute
+                                                                    surgeries with utmost accuracy.</li>
+                                                                <li>- Leveraging the medical expertise of the SU Yonsei
+                                                                    team, we offer fully personalized treatments through
+                                                                    the Aberration Free / Corneal Wavefront techniques,
+                                                                    tailored to individual needs.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-12">
+                                                <div class="mission-img-area">
+                                                    <img src="/front/en/assets/img/surgery/2a.png" alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="artiflex" role="tabpanel"
+                                        aria-labelledby="profile-tab">
+                                        <div class="tab-content">
+                                            <div class="col-lg-6 col-md-12">
+                                                <div class="paragraph-wrap">
+                                                    <div class="paragraph-area padding-30">
+                                                        <div class="check-box-area">
+                                                            <ul class="check-box">
+                                                                <li>- Employing Alcon's state-of-the-art EX500
+                                                                    technology, our Custom Q VisuLASIK is an innovative,
+                                                                    personalized surgical approach designed to preserve
+                                                                    the natural aspheric shape of the cornea.</li>
+                                                                <li>- This helps in preventing complications like glare,
+                                                                    myopic regression, and corneal haze.</li>
+                                                                <li>- This surgery is highly recommended for correcting
+                                                                    extreme cases of myopia and astigmatism.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-12">
+                                                <div class="mission-img-area">
+                                                    <img src="/front/en/assets/img/surgery/2b.png" alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!--Main Area End Here-->
+
+    <th:block th:replace="fragments/en/common :: enFooter"></th:block>
+</body>
+
+</html>

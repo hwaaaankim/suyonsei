@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/jp/common :: jpHeadSource">
+</head>
+
+<body>
+
+    <div class="preloader" th:replace="fragments/jp/common :: jpPreloader">
+    </div>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header-area">
+                    <div class="logo-area">
+                        <a href="/jp/index">
+                            <img src="/front/jp/assets/img/logo.png" alt="Nav Logo">
+                        </a>
+                    </div>
+                    <nav class="navbar navbar-area navbar-expand-lg sticky-navbar">
+                        <div class="container nav-container">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#fortis_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="cross-menu">
+                                    <span class="bar1"></span>
+                                    <span class="bar2"></span>
+                                    <span class="bar3"></span>
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="fortis_main_menu">
+                                <ul class="navbar-nav">
+                                    <li>
+                                        <a class="move-page" href="/jp/index">Home</a>
+                                    </li>
+									<li>
+                                        <a class="move-page" href="/jp/choice">スヨンセ眼科選択する瞬間</a>
+                                    </li>
+                                    <li>
+                                        <a class="move-page" href="/jp/equipments">Equipments
+                                            Center</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a class="center active" href="javascript:void(0)">Surgery Center
+                                            <ul class="sub-menu">
+                                                <li><a class="move-page" href="/jp/smile"># スマイルレーシック</a></li>
+                                                <li><a class="move-page" href="/jp/smilePro"># スマイルプロ</a></li>
+                                                <li><a class="move-page" href="/jp/keratoconus"># 円錐角膜</a></li>
+                                                <li><a class="move-page" href="/jp/lens"># 眼内レンズ挿入術</a></li>
+                                                <li><a class="move-page" href="/jp/lasek"># ラセック</a></li>
+                                                <li><a class="move-page" href="/jp/lasik"># レーシック</a></li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="breadcrumb-area padding-100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="breadcrumb-content">
+                        <div class="col-12 px-0">
+                            <div class="page-title">
+                                <h1 class="heading-1">スヨンセのSurgery</h1>
+                                <h6 class="heading-6">涙膜を最適な状態にし、スマイルの結果を大幅に向上させた手術方法</h6>
+                            </div>
+                        </div>
+                        <ul class="page-list">
+                            <li><a href="/jp/index">Home</a></li>
+                            <li>Surgery Center</li>
+                            <li>Smile Lasik</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="teeth-canel padding-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="canel-content-area">
+                            <div class="common-title padding-bottom-20">
+                                <h3 class="heading-4 line-none">涙膜をコントロールするスマイル、TFCスマイル</h3>
+                            </div>
+                            <p>スマイルも同じスマイルではありません。 涙膜を最適な状態にすることで、スマイルの結果を大幅に向上させた手術方法として
+                                スヨンセ眼科医療スタッフが5年間の研究の末に初めて開発し、2018年に海外学会発表及びSCI論文であるGraefe's Archiveに掲載された最高の手術法です。
+                            </p>
+                            <!-- video popup toggler -->
+
+                        </div>
+                    </div>
+                    <div class="col-lg-7 pr-lg-0">
+                        <div class="canel-img-area">
+                            <img src="/front/jp/assets/img/surgery/1.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="neurology-section padding-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 d-flex align-items-center">
+                        <div class="neurology-content-area">
+                            <div class="common-title padding-bottom-30">
+                                <h2 class="heading line-left">SMall Incision Lenticule Extraction</h2>
+                            </div>
+                            <div class="check-box-area">
+                                <ul class="check-box">
+                                    <li>- 高い手術結果予測度</li>
+                                    <li>- ぼんやりした症状期間の最小化と予防</li>
+                                    <li>- 低エネルギー、高エネルギー別のメリットを最大化</li>
+                                    <li>- より低い近視の退行確率</li>
+                                    <li>- 中心ずれの抑制、より正確な乱視の矯正</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="neurology-img-area">
+                            <img src="/front/jp/assets/img/japan/won01.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="neurology-img-area">
+                            <img src="/front/jp/assets/img/japan/won02.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Main Area End Here-->
+
+    <th:block th:replace="fragments/jp/common :: jpFooter"></th:block>
+</body>
+
+</html>

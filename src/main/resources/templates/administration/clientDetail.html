@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/admin/common :: adminHead('관리자페이지')">
+
+</head>
+
+
+<body>
+    <section id="container">
+
+         <th:block th:replace="fragments/admin/common :: adminHeader"></th:block>
+
+         <th:block th:replace="fragments/admin/common :: adminSidebar"></th:block>
+
+        <section id="main-content">
+            <section class="wrapper">
+                <div class="row mt" style="justify-content: space-between;">
+                    <div class="col-md-7">
+                        <div class="content-panel">
+                            <h4>
+                                <i class="fa fa-angle-right"></i> 고객 상세페이지
+                            </h4>
+                            <hr>
+                            <div class="row mt">
+                                <div class="col-lg-12">
+                                    <div class="form">
+                                        <form class="cmxform form-horizontal style-form" method="post" action="/admin/memberUpdate">
+											<div class="row">
+												<div class="col-lg-12 col-md-12">
+		                                            <div class="form-group ">
+		                                                <label for="cname" class="control-label col-lg-2"># 고객이름</label>
+		                                                <div class="col-lg-10">
+		                                                    <input class=" form-control" 
+		                                                    type="text" 
+		                                                    th:value="${client.name}"
+		                                                    name="name" readonly/>
+		                                                    <input type="hidden"
+		                                                     th:value="${client.id}"
+		                                                     name="id">
+		                                                </div>
+		                                            </div>
+		                                            <div class="form-group ">
+		                                                <label for="email" class="control-label col-lg-2"># 고객연락처</label>
+		                                                <div class="col-lg-10">
+		                                                    <input class="form-control" type="text"
+		                                                    th:value="${client.phone}"
+		                                                    name="phone"
+															oninput="autoHyphen(this)" maxlength="13" readonly/>
+		                                                </div>
+		                                            </div>
+		                                            <div class="form-group ">
+		                                                <label for="curl" class="control-label col-lg-2"># 고객이메일</label>
+		                                                <div class="col-lg-10">
+		                                                    <input class="form-control" type="email" readonly
+		                                                    th:value="${client.email}"
+		                                                    name="email"/>
+		                                                </div>
+		                                            </div>
+		                                            
+		                                            <div class="form-group ">
+		                                                <label for="curl" class="control-label col-lg-2"># 고객 문의시간</label>
+		                                                <div class="col-lg-10">
+		                                                    <input class="form-control" type="text"
+		                                                    th:value="${client.inquirydate}" readonly/>
+		                                                </div>
+		                                            </div>
+		                                            <div class="form-group ">
+		                                                <label for="curl" class="control-label col-lg-2"># 고객 확인시간</label>
+		                                                <div class="col-lg-10">
+		                                                    <input class="form-control" type="text"
+		                                                    th:value="${client.changeDate}" readonly/>
+		                                                </div>
+		                                            </div>
+		                                            <div class="form-group ">
+		                                                <label for="curl" class="control-label col-lg-2"># 고객 체류기간</label>
+		                                                <div class="col-lg-10">
+		                                                    <input class="form-control" type="text" readonly
+		                                                    th:value="${client.duration}"/>
+		                                                </div>
+		                                            </div>
+		                                            <div class="form-group ">
+		                                                <label for="curl" class="control-label col-lg-2"># 고객 남김말</label>
+		                                                <div class="col-lg-10">
+		                                                    <textarea class="form-control"
+		                                                    readonly name="comments" th:text="${client.comments}"></textarea>
+		                                                </div>
+		                                            </div>
+		                                           
+		                                            <div class="form-group ">
+		                                                <label for="cname" class="control-label col-lg-2"># 고객 LAST NAME</label>
+		                                                <div class="col-lg-10">
+		                                                    <input class=" form-control" 
+		                                                    type="text" readonly
+		                                                    th:value="${client.lastName}"
+		                                                    name="name"/>
+		                                                </div>
+		                                            </div>
+		                                            <div class="form-group ">
+		                                                <label for="email" class="control-label col-lg-2"># 고객 문의주제</label>
+		                                                <div class="col-lg-10">
+		                                                    <input class="form-control" type="text"
+		                                                    th:value="${client.subject}" readonly
+		                                                    name="subject"/>
+		                                                </div>
+		                                            </div>
+		                                            
+		                                            <div class="form-group ">
+		                                                <label for="curl" class="control-label col-lg-2"># 렌즈 착용여부</label>
+		                                                <div class="col-lg-10">
+		                                                    <input class="form-control" type="text"
+		                                                    th:value="${client.wear}" readonly
+		                                                    name="wear"/>
+		                                                </div>
+		                                            </div>
+		                                            <div class="form-group ">
+		                                                <label for="curl" class="control-label col-lg-2"># 고객 착용제품</label>
+		                                                <div class="col-lg-10">
+		                                                    <input class="form-control" readonly type="text" th:value="${client.sort}"/>
+		                                                </div>
+		                                            </div>
+		                                            <div class="form-group ">
+		                                                <label for="curl" class="control-label col-lg-2"># 문의국가</label>
+		                                                <div class="col-lg-10">
+		                                                    <input th:if="${client.code == 'jp'}" class="form-control" type="text"
+		                                                    value="일본사이트문의" name="code" readonly/>
+		                                                    <input th:if="${client.code == 'en'}" class="form-control" type="text"
+		                                                    value="영문사이트문의" name="code" readonly/>
+		                                                </div>
+		                                            </div>
+		                                            <div class="form-group ">
+		                                                <label for="curl" class="control-label col-lg-2"># 고객거주지역</label>
+		                                                <div class="col-lg-10">
+		                                                    <input class="form-control" type="text"
+		                                                    th:value="${client.country}" readonly/>
+		                                                </div>
+		                                            </div>
+		                                             <div class="form-group">
+		                                                <div class="col-lg-offset-2 col-lg-10">
+		                                                    <button class="btn btn-theme" type="button"
+		                                                    onclick="javascript:location.href='/admin/clientManager'">확인</button>
+		                                                </div>
+		                                            </div>
+	                                            </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="content-panel">
+                            <h4>
+                                <i class="fa fa-angle-right"></i> 고객 메시지 전송
+                            </h4>
+                            <hr>
+                            <div class="row mt">
+                                <div class="col-lg-12">
+                                    <div class="form">
+                                        <form class="cmxform form-horizontal style-form" method="post" action="/admin/sendEmail">
+											<div class="row">
+												<div class="col-lg-12 col-md-12">
+		                                            <div class="form-group ">
+		                                                <label for="cname" class="control-label col-lg-3"># 이메일제목</label>
+		                                                <div class="col-lg-9">
+		                                                    <input 
+		                                                    class="form-control" 
+		                                                    type="text" 
+		                                                    name="title"/>
+		                                                    <input type="hidden"
+		                                                     th:value="${client.id}"
+		                                                     name="id">
+		                                                </div>
+		                                            </div>
+		                                            <div class="form-group ">
+		                                                <label for="cname" class="control-label col-lg-3"># 발신이메일</label>
+		                                                <div class="col-lg-9">
+		                                                    <input 
+		                                                    readonly
+		                                                    class="form-control" 
+		                                                    type="text" 
+		                                                    value="admin@smilelasek.com"/>
+		                                                </div>
+		                                            </div>
+		                                            <div class="form-group ">
+		                                                <label for="cname" class="control-label col-lg-3"># 수신이메일</label>
+		                                                <div class="col-lg-9">
+		                                                    <input 
+		                                                    class="form-control" 
+		                                                    type="text" 
+		                                                    name="email"
+		                                                    th:value="${client.email}"/>
+		                                                </div>
+		                                            </div>
+		                                             <div class="form-group ">
+		                                                <label for="curl" class="control-label col-lg-3"># 메시지</label>
+		                                                <div class="col-lg-9">
+		                                                    <textarea class="form-control"
+		                                                    name="message" placeholder="전달할 메시지를 입력 해 주세요."></textarea>
+		                                                </div>
+		                                            </div>
+		                                            <div class="form-group">
+		                                                <div class="col-lg-offset-2 col-lg-10">
+		                                                    <button class="btn btn-theme" type="submit">전송</button>
+		                                                </div>
+		                                            </div>
+	                                            </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+    <th:block th:replace="fragments/admin/common :: adminScript"></th:block>
+	<script>
+	const autoHyphen = (target) => {
+		target.value = target.value
+			.replace(/[^0-9]/g, '')
+			.replace(/^(\d{0,3})(\d{0,4})(\d{0,4})$/g, "$1-$2-$3").replace(/(\-{1,2})$/g, "");
+	}
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head th:fragment="jpHeadSource">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>スヨンセ眼科</title>
+
+    <link rel="icon" href="favicon.png" sizes="20x20" type="image/png">
+    <link rel="stylesheet" href="/front/jp/assets/css/flaticon.css">
+    <link rel="stylesheet" href="/front/jp/assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/front/jp/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/front/jp/assets/css/animate.css">
+    <link rel="stylesheet" href="/front/jp/assets/css/rpopup.min.css">
+    <link rel="stylesheet" href="/front/jp/assets/css/slick.css">
+    <link rel="stylesheet" href="/front/jp/assets/css/jquery.rprogessbar.min.css">
+    <link rel="stylesheet" href="/front/jp/assets/css/style.css">
+    <link rel="stylesheet" href="/front/jp/assets/css/responsive.css">
+    <link rel="stylesheet" href="/front/jp/assets/css/detail.css">
+    <script src="https://kit.fontawesome.com/e5334cc6a1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="preloader" id="preloader" th:fragment="jpPreloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header-area">
+                    <div class="logo-area">
+                        <a href="#">
+                            <img src="/front/jp/assets/img/logo.png" alt="Nav Logo">
+                        </a>
+                    </div>
+                    <nav class="navbar navbar-area navbar-expand-lg sticky-navbar">
+                        <div class="container nav-container">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#fortis_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="cross-menu">
+                                    <span class="bar1"></span>
+                                    <span class="bar2"></span>
+                                    <span class="bar3"></span>
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="fortis_main_menu">
+                                <ul class="navbar-nav">
+                                    <li>
+                                        <a class="home active" href="#home">Home</a>
+                                    </li>
+                                    <li>
+                                        <a class="why" href="#why">Why スヨンセ？</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a class="equipment" href="#equipment">Equipments
+                                            <ul class="sub-menu">
+                                                <li><a class="move-page" href="equipments.html"># Equipments Center</a>
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a class="center" href="#center">視力矯正手術センター
+                                            <ul class="sub-menu">
+                                                <li><a class="move-page" href="smile.html"># スマイルレーシック</a></li>
+                                                <li><a class="move-page" href="keratoconus.html"># 円錐角膜</a></li>
+                                                <li><a class="move-page" href="lens.html"># 眼内レンズ挿入術</a></li>
+                                                <li><a class="move-page" href="lasek.html"># ラセック</a></li>
+                                                <li><a class="move-page" href="lasik.html"># レーシック</a></li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="doctor" href="#doctor">医療スタッフ紹介</a>
+                                    </li>
+                                    <li>
+                                        <a class="comment" href="#comment">体験談</a>
+                                    </li>
+                                    <li><a class="contact" href="#contact">お問い合わせ</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+	<th:block th:fragment="jpFooter">
+	    <!-- footer area start -->
+	    <footer class="footer-area">
+	        <div class="footer-top">
+	            <div class="container-fluid">
+	                <div class="row">
+	                    <div class="col-lg-4 col-md-12">
+	                        <div class="footer-widget widget logo-widget">
+	                            <a href="#">
+	                                <img width="250px" src="/front/jp/assets/img/logo.png" alt="Nav Logo">
+	                            </a>
+	                            <ul>
+	                                <li>
+	                                    <span class="icon"><i class="far fa-envelope"></i></span>suyonsei3@naver.com
+	                                </li>
+	                                <li>
+	                                    <span class="icon"><i class="fas fa-phone"></i></span>02-2258-0077
+	                                </li>
+	                            </ul>
+	                            <div class="footer-social-icon">
+	                                <a class="icon" href="https://www.facebook.com/happylasek" target="_blank"><i class="fab fa-facebook-f"></i></a>
+	                                <a class="icon" href="https://www.instagram.com/suyonsei_eye/" target="_blank"><i class="fab fa-instagram"></i></a>
+	                                <a class="icon" href="https://twitter.com/suyonseieye_jpn" target="_blank"><i class="fab fa-twitter"></i></a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-lg-4 col-md-6">
+	                        <div class="footer-widget widget widget_nav_menu">
+	                            <h4 class="widget-title">Contact US</h4>
+	                            <ul>
+	                                <li><a href="#">ソウル市ソチョ区ソチョ大路77ギル54、ソチョWタワー 5階</a></li>
+	                                <li><a href="#">(ソウル市ソチョ区ソチョ洞 1303-37 Wタワー 5階)</a></li>
+	                                <li><a href="#"> スヨンセ眼科</a></li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                    <div class="col-lg-4 col-md-6">
+	                        <div class="footer-widget widget widget_nav_menu">
+	                            <h4 class="widget-title">By Airplane</h4>
+	                            <ul>
+	                                <li><a href="#"># 金浦空港 9号線 金浦空港駅 -> 新ノンヒョン駅下車（8番出口、徒歩5分）</a></li>
+	                                <li><a href="#"># 仁川国際空港鉄道仁川空港ターミナル駅 -> 9号線 金浦空港駅で乗り換え </a></li>
+	                                <li><a href="#">-> 新ノンヒョン駅下車（8番出口、徒歩5分）</a></li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	
+	                </div>
+	            </div>
+	        </div>
+	        <div class="copyright-area">
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-lg-12">
+	                        <div class="copyright-area-inner">
+	                            &copy; Copyright ATTRACTIONs - Made with <span class="coypright-icon"><i
+	                                    class="fas fa-heart"></i></span> by
+	                            <a href="http://www.atrt.co.kr/" target="_blank">ATTRACTIONs</a>.
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </footer>
+	
+	    <div class="back-to-top">
+	        <span class="back-top"><i class="flaticon-up-arrow"></i></span>
+	    </div>
+	    
+	    <script src="/front/jp/assets/js/jquery-3.4.1.min.js"></script>
+	    <script src="/front/jp/assets/js/jquery-migrate.min.js"></script>
+	    <script src="/front/jp/assets/js/bootstrap.min.js"></script>
+	    <script src="/front/jp/assets/js/waypoints.min.js"></script>
+	    <script src="/front/jp/assets/js/jQuery.rProgressbar.min.js"></script>
+	    <script src="/front/jp/assets/js/slick.min.js"></script>
+	    <script src="/front/jp/assets/js/wow.min.js"></script>
+	    <script src="/front/jp/assets/js/selectbox.min.js"></script>
+	    <script src="/front/jp/assets/js/jquery.rPopup.js"></script>
+	    <script src="/front/jp/assets/js/jquery.countdown.min.js"></script>
+	    <script src="/front/jp/assets/js/jQuery.rcounter.js"></script>
+	    <script src="/front/jp/assets/js/jquery-ui.js"></script>
+	
+	    <script src="/front/jp/assets/js/goolg-map-activate.js"></script>
+	    <script src="/front/jp/assets/js/imagesloaded.pkgd.min.js"></script>
+	    <script src="/front/jp/assets/js/isotope.pkgd.min.js"></script>
+	    <script src="/front/jp/assets/js/main.js"></script>
+	    <script>
+	        const sectionAll = document.querySelectorAll("section[id]");
+	        window.addEventListener("scroll", () => {
+	            const scrollY = window.pageYOffset;
+	            if (scrollY > 200) {
+	                $('#header').removeClass('active');
+	            } else {
+	                $('#header').addClass('active');
+	            }
+	            sectionAll.forEach((current) => {
+	                const sectionHeight = current.offsetHeight;
+	                const sectionTop = current.offsetTop - 50;
+	                const sectionId = current.getAttribute("id");
+	
+	                if (scrollY > sectionTop && scrollY < sectionTop + sectionHeight) {
+	                    document.querySelector(`.${sectionId}`).classList.add("active");
+	                } else {
+	                    document.querySelector(`.${sectionId}`).classList.remove("active");
+	                }
+	            });
+	        });
+	
+	    </script>
+	    <div class="btn-wrap">
+			<a class="line-wrap" target="_blank" href="https://page.line.me/233yfqhs">
+				<img class="line" src="https://teriwoo0519.cafe24.com/tomo/line.png">
+			</a>
+		</div>
+	</th:block>
+	
+</body>
+
+</html>

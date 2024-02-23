@@ -1,0 +1,247 @@
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/jp/common :: jpHeadSource">
+</head>
+
+<body>
+
+    <div class="preloader" th:replace="fragments/jp/common :: jpPreloader">
+    </div>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header-area">
+                    <div class="logo-area">
+                        <a href="/jp/index">
+                            <img src="/front/jp/assets/img/logo.png" alt="Nav Logo">
+                        </a>
+                    </div>
+                    <nav class="navbar navbar-area navbar-expand-lg sticky-navbar">
+                        <div class="container nav-container">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#fortis_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="cross-menu">
+                                    <span class="bar1"></span>
+                                    <span class="bar2"></span>
+                                    <span class="bar3"></span>
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="fortis_main_menu">
+                                <ul class="navbar-nav">
+                                    <li>
+                                        <a class="move-page" href="/jp/index">Home</a>
+                                    </li>
+									<li>
+                                        <a class="move-page" href="/jp/choice">スヨンセ眼科選択する瞬間</a>
+                                    </li>
+                                    <li>
+                                        <a class="move-page" href="/jp/equipments">Equipments
+                                            Center</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a class="center active" href="javascript:void(0)">Surgery Center
+                                            <ul class="sub-menu">
+                                                <li><a class="move-page" href="/jp/smile"># スマイルレーシック</a></li>
+                                                <li><a class="move-page" href="/jp/smilePro"># スマイルプロ</a></li>
+                                                <li><a class="move-page" href="/jp/keratoconus"># 円錐角膜</a></li>
+                                                <li><a class="move-page" href="/jp/lens"># 眼内レンズ挿入術</a></li>
+                                                <li><a class="move-page" href="/jp/lasek"># ラセック</a></li>
+                                                <li><a class="move-page" href="/jp/lasik"># レーシック</a></li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="breadcrumb-area padding-100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="breadcrumb-content">
+                        <div class="col-12 px-0">
+                            <div class="page-title">
+                                <h1 class="heading-1">スヨンセのSurgery</h1>
+                                <h6 class="heading-6">角膜の最も前面にある上皮だけを分離した後、レーザーを照射して近視乱視を矯正する手術方法</h6>
+                            </div>
+                        </div>
+                        <ul class="page-list">
+                            <li><a href="/jp/index">Home</a></li>
+                            <li>Surgery Center</li>
+                            <li>LASEK</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="teeth-canel padding-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="canel-content-area">
+                            <div class="common-title padding-bottom-20">
+                                <h2 class="heading line-none">ラセックLASEK</h2>
+                            </div>
+                            <p>角膜の最も前面にある上皮だけを分離した後、レーザーを照射して近視乱視を矯正する手術方法
+                            </p>
+                            <!-- video popup toggler -->
+                            <div class="check-box-area">
+                                <ul class="check-box">
+                                    <li>- 3-4日の痛み、回復が遅いのが欠点ですが、レーザー視力矯正手術の中で最も少ない範囲で行われる保守的な手術</li>
+                                    <li>- 角膜が薄くて厚いメガネをかける方に優先的に検討される手術</li>
+                                    <li>- 手術の過程はもちろん、手術後の視力を完成させていく過程がより重要なレーシック、スヨンセ執刀医が手術前の検査から生涯のアフターケアまで行います。
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 pr-lg-0">
+                        <div class="canel-img-area">
+                            <img src="/front/jp/assets/img/japan/lasekp.png" alt="img">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--// Teeth-canel Section End Here-->
+
+        <!-- Our Other Service Section Start Here-->
+        <section class="our-mission-section mb-5" id="lens-tab">
+            <div class="container">
+                <div class="row">
+                    <!--Common Title-->
+                    <div class="col-12">
+                        <div class="common-title padding-bottom-20">
+                            <h2 class="heading line-left m-auto">LASEK</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <!--Mission Tab Area-->
+                        <div class="mission-tab-area padding-top-60">
+                            <!-- <div class="col-lg-6 col-md-12"> -->
+                            <div class="tab-navbar-area" style="width:50%;">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#artisan"
+                                            role="tab" aria-controls="home" aria-selected="true">プレミアムカスタムSラセック</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#artiflex"
+                                            role="tab" aria-controls="profile" aria-selected="false">プレミアムカスタムQラセック</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#evo" role="tab"
+                                            aria-controls="contact" aria-selected="false">エクストララセック(LASEK with CXL)</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="tab-content-area">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="artisan" role="tabpanel"
+                                        aria-labelledby="home-tab">
+                                        <div class="tab-content" style="justify-content: space-around;">
+                                            <div class="col-lg-6 col-md-12">
+                                                <div class="paragraph-wrap">
+                                                    <div class="paragraph-area padding-30">
+                                                        <div class="check-box-area">
+                                                            <ul class="check-box">
+                                                                <li>- Schwind社の最新バージョン、最新スペックのアマリスREDスマートパルステクノロジーを用いたラセック
+                                                                </li>
+                                                                <li>- 視軸(Angle Kappa, offset)、虹彩形状、高次収差、角膜湾曲率などの情報を
+                                                                    そのままアマリスレッドレーザーで送信すれば、非常に正確で精巧な手術が可能</li>
+                                                                <li>- 個人の特性に合わせた Aberration Free / Corneal Wavefront
+                                                                    方式を利用して、完全な個人に合わせた手術を提供</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5 col-md-12">
+                                                <div class="mission-img-area">
+                                                    <img src="/front/jp/assets/img/surgery/1a.png" alt="img"
+                                                        style="box-shadow:0px 5px 5px rgba(0,0,0,0.5);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="artiflex" role="tabpanel"
+                                        aria-labelledby="profile-tab">
+                                        <div class="tab-content" style="justify-content: space-around;">
+                                            <div class="col-lg-6 col-md-12">
+                                                <div class="paragraph-wrap">
+                                                    <div class="paragraph-area padding-30">
+                                                        <div class="check-box-area">
+                                                            <ul class="check-box">
+                                                                <li>- Alcon社の最新バージョン、最新スペックのEX500を用いたラセック</li>
+                                                                <li>- 元の角膜の非球面形状を最大限に保存することで、光の分散、視退行、角膜混濁の後遺症を
+                                                                    予防する新概念のオーダーメイド手術</li>
+                                                                <li>- 超高度近視・乱視矯正におすすめの手術</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5 col-md-12">
+                                                <div class="mission-img-area">
+                                                    <img src="/front/jp/assets/img/surgery/1b.png" alt="img"
+                                                        style="box-shadow:0px 5px 5px rgba(0,0,0,0.5);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="evo" role="tabpanel" aria-labelledby="contact-tab">
+                                        <div class="tab-content" style="justify-content: space-around;">
+                                            <div class="col-lg-6 col-md-12">
+                                                <div class="paragraph-wrap">
+                                                    <div class="paragraph-area padding-30">
+                                                        <div class="check-box-area">
+                                                            <ul class="check-box">
+                                                                <li>- CXLは角膜コラーゲン架橋術の略称で、角膜が薄い、超近視・乱視、遠視矯正の際に
+                                                                    適用、レーシックで屈折異常を矯正した後、コラーゲン架橋術を施行して角膜の安定性を高める
+                                                                    手術<li>
+                                                                <li>- 当院の医療スタッフは2011年から円錐角膜治療の目的で角膜交差結合術を施行してきまして、
+                                                                    エクストララセックは韓国で初めて実施し、学界に報告</li>
+                                                                <li>- この手術のメリットとデメリットを誰よりも明確に理解しているため、その適用は必ず執刀医と
+                                                                    相談の上決定することが望ましい</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5 col-md-12">
+                                                <div class="mission-img-area">
+                                                    <img src="/front/jp/assets/img/surgery/1c.png" alt="img"
+                                                        style="box-shadow:0px 5px 5px rgba(0,0,0,0.5);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--// Google Map End-->
+
+    </main>
+    <!--Main Area End Here-->
+
+    <th:block th:replace="fragments/jp/common :: jpFooter"></th:block>
+</body>
+
+</html>

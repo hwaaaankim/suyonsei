@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/en/common :: enHeadSource">
+</head>
+
+<body>
+
+    <div class="preloader" th:replace="fragments/en/common :: enPreloader">
+    </div>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header-area">
+                    <div class="logo-area">
+                        <a href="/en/index">
+                            <img src="/front/en/assets/img/logo.png" alt="Nav Logo">
+                        </a>
+                    </div>
+                    <nav class="navbar navbar-area navbar-expand-lg sticky-navbar">
+                        <div class="container nav-container">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#fortis_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="cross-menu">
+                                    <span class="bar1"></span>
+                                    <span class="bar2"></span>
+                                    <span class="bar3"></span>
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="fortis_main_menu">
+                                <ul class="navbar-nav">
+                                    <li>
+                                        <a class="move-page" href="/en/index">Home</a>
+                                    </li>
+									 <li>
+                                        <a class="move-page" href="/en/choice">The Moment You Choose Su Yonsei!</a>
+                                    </li>
+                                    <li>
+                                        <a class="move-page" href="/en/equipments">Equipments
+                                            Center</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a class="center" href="javascript:void(0)">Surgery Center
+                                            <ul class="sub-menu">
+                                                <li><a class="move-page" href="/en/smile"># SMILE LASIK</a></li>
+                                                <li><a class="move-page" href="/en/smilePro"># SMILE PRO</a></li>
+                                                <li><a class="move-page" href="/en/keratoconus"># Keratoconus</a></li>
+                                                <li><a class="move-page" href="/en/lens"># Lens Implantation
+                                                        Surgery</a></li>
+                                                <li><a class="move-page" href="/en/lasek"># LASEK</a></li>
+                                                <li><a class="move-page" href="/en/lasik"># LASIK</a></li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="breadcrumb-area padding-100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="breadcrumb-content">
+                        <div class="col-12 px-0">
+                            <div class="page-title">
+                                <h1 class="heading-1">SU Yonsei's Vision Correction Surgery Center</h1>
+                                <h6 class="heading-6">LASEK is a surgical procedure aimed at correcting myopia and
+                                    astigmatism by removing the outermost epithelium of the cornea and applying laser
+                                    treatment.</h6>
+                            </div>
+                        </div>
+                        <ul class="page-list">
+                            <li><a href="/en/index">Home</a></li>
+                            <li>Surgery Center</li>
+                            <li>LASEK</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="teeth-canel padding-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="canel-content-area">
+                            <div class="common-title padding-bottom-20">
+                                <h2 class="heading line-none">LASEK</h2>
+                            </div>
+                            <p>LASEK is a surgical procedure aimed at correcting myopia and astigmatism by removing the
+                                outermost epithelium of the cornea and applying laser treatment.
+                            </p>
+                            <!-- video popup toggler -->
+                            <div class="check-box-area">
+                                <ul class="check-box">
+                                    <li>- Though the process involves 3-4 days of discomfort and a slower recovery rate,
+                                        it is considered one of the most conservative laser vision correction surgeries.
+                                    </li>
+                                    <li>- This procedure is especially recommended for individuals with thin corneas or
+                                        those who wear thick glasses.
+                                    </li>
+                                    <li>- At SU Yonsei Eye Clinic, we believe that the journey to optimal vision extends
+                                        far beyond the surgical procedure itself. It also involves the meticulous
+                                        pre-operative evaluation and lifelong post-operative care that our specialized
+                                        medical team provides.</li>
+                                    <li>- This articulates the conservative yet effective approach taken by LASEK, and
+                                        how our clinic ensures comprehensive care at each step.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 pr-lg-0">
+                        <div class="canel-img-area">
+                            <img src="/front/en/assets/img/eng/lasek01.png" alt="img">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--// Teeth-canel Section End Here-->
+
+        <!-- Our Other Service Section Start Here-->
+        <section class="our-mission-section mb-5" id="lens-tab">
+            <div class="container">
+                <div class="row">
+                    <!--Common Title-->
+                    <div class="col-12">
+                        <div class="common-title padding-bottom-20">
+                            <h2 class="heading line-left m-auto">LASEK</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <!--Mission Tab Area-->
+                        <div class="mission-tab-area padding-top-60">
+                            <!-- <div class="col-lg-6 col-md-12"> -->
+                            <div class="tab-navbar-area" style="width:50%;">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#artisan"
+                                            role="tab" aria-controls="home" aria-selected="true">Premium Custom
+                                            S-LASEK</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#artiflex"
+                                            role="tab" aria-controls="profile" aria-selected="false">Premium Custom
+                                            Q-LASEK</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#evo" role="tab"
+                                            aria-controls="contact" aria-selected="false">Extra LASEK (LASEK with CXL)
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="tab-content-area">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="artisan" role="tabpanel"
+                                        aria-labelledby="home-tab">
+                                        <div class="tab-content" style="justify-content: space-around;">
+                                            <div class="col-lg-6 col-md-12">
+                                                <div class="paragraph-wrap">
+                                                    <div class="paragraph-area padding-30">
+                                                        <div class="check-box-area">
+                                                            <ul class="check-box">
+                                                                <li>- Utilizing Schwind's latest Amaris RED with
+                                                                    SmartPulse Technology, the Premium Custom S-LASEK
+                                                                    procedure is exceptionally precise and
+                                                                    sophisticated.
+                                                                </li>
+                                                                <li>- The technology transfers intricate data like Angle
+                                                                    Kappa, iris shape, higher-order aberrations, and
+                                                                    corneal curvature directly to the Amaris RED laser
+                                                                    for meticulous surgery.</li>
+                                                                <li>- Leveraging the specialized expertise of SU Yonsei
+                                                                    medical staff, we provide truly personalized
+                                                                    surgeries using the Aberration-Free / Corneal
+                                                                    Wavefront techniques tailored to individual
+                                                                    characteristics.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5 col-md-12">
+                                                <div class="mission-img-area">
+                                                    <img src="/front/en/assets/img/surgery/1a.png" alt="img"
+                                                        style="box-shadow:0px 5px 5px rgba(0,0,0,0.5);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="artiflex" role="tabpanel"
+                                        aria-labelledby="profile-tab">
+                                        <div class="tab-content" style="justify-content: space-around;">
+                                            <div class="col-lg-6 col-md-12">
+                                                <div class="paragraph-wrap">
+                                                    <div class="paragraph-area padding-30">
+                                                        <div class="check-box-area">
+                                                            <ul class="check-box">
+                                                                <li>- Employing Alcon's latest EX500 specifications, the
+                                                                    Premium Custom Q-LASEK is an innovative custom
+                                                                    surgical procedure designed to minimize
+                                                                    after-effects such as nighttime glare, myopic
+                                                                    regression, and corneal opacities by preserving the
+                                                                    natural aspheric shape of the cornea as much as
+                                                                    possible.</li>
+                                                                <li>- This procedure is particularly recommended for the
+                                                                    correction of extreme levels of myopia and
+                                                                    astigmatism. </li>
+                                                                <li>- This text reflects the advanced, customized
+                                                                    offerings in LASEK procedures available at SU Yonsei
+                                                                    Eye Clinic, emphasizing their precision,
+                                                                    sophistication, and personalized approach.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5 col-md-12">
+                                                <div class="mission-img-area">
+                                                    <img src="/front/en/assets/img/surgery/1b.png" alt="img"
+                                                        style="box-shadow:0px 5px 5px rgba(0,0,0,0.5);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="evo" role="tabpanel" aria-labelledby="contact-tab">
+                                        <div class="tab-content" style="justify-content: space-around;">
+                                            <div class="col-lg-6 col-md-12">
+                                                <div class="paragraph-wrap">
+                                                    <div class="paragraph-area padding-30">
+                                                        <div class="check-box-area">
+                                                            <ul class="check-box">
+                                                                <li>- Extra LASEK is a surgical method that combines
+                                                                    LASEK refractive correction with Corneal
+                                                                    Cross-Linking (CXL) to enhance corneal stability.
+                                                                    This is particularly applicable when dealing with
+                                                                    thin corneas, extremely high levels of
+                                                                    myopia/astigmatism, or hyperopia. </li>
+                                                                <li>- Our medical team at this clinic has been
+                                                                    performing corneal cross-linking since 2011,
+                                                                    primarily for the treatment of keratoconus. We are
+                                                                    the first in the country to have introduced Extra
+                                                                    LASEK and have reported its outcomes in academic
+                                                                    circles.</li>
+                                                                <li>- Given our extensive knowledge of the pros and cons
+                                                                    of this procedure, we strongly recommend consulting
+                                                                    with our experts to make an informed decision on
+                                                                    whether Extra LASEK is the appropriate treatment for
+                                                                    you.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5 col-md-12">
+                                                <div class="mission-img-area">
+                                                    <img src="/front/en/assets/img/surgery/1c.png" alt="img"
+                                                        style="box-shadow:0px 5px 5px rgba(0,0,0,0.5);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--// Google Map End-->
+
+    </main>
+    <!--Main Area End Here-->
+
+    <th:block th:replace="fragments/en/common :: enFooter"></th:block>
+</body>
+
+</html>

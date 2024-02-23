@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/jp/common :: jpHeadSource">
+</head>
+
+<body>
+
+    <div class="preloader" th:replace="fragments/jp/common :: jpPreloader">
+    </div>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header-area">
+                    <div class="logo-area">
+                        <a href="/jp/index">
+                            <img src="/front/jp/assets/img/logo.png" alt="Nav Logo">
+                        </a>
+                    </div>
+                    <nav class="navbar navbar-area navbar-expand-lg sticky-navbar">
+                        <div class="container nav-container">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#fortis_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="cross-menu">
+                                    <span class="bar1"></span>
+                                    <span class="bar2"></span>
+                                    <span class="bar3"></span>
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="fortis_main_menu">
+                                <ul class="navbar-nav">
+                                    <li>
+                                        <a class="move-page" href="/jp/index">Home</a>
+                                    </li>
+									<li>
+                                        <a class="move-page" href="/jp/choice">スヨンセ眼科選択する瞬間</a>
+                                    </li>
+                                    <li>
+                                        <a class="move-page" href="/jp/equipments">Equipments
+                                            Center</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a class="center active" href="javascript:void(0)">Surgery Center
+                                            <ul class="sub-menu">
+                                                <li><a class="move-page" href="/jp/smile"># スマイルレーシック</a></li>
+                                                <li><a class="move-page" href="/jp/smilePro"># スマイルプロ</a></li>
+                                                <li><a class="move-page" href="/jp/keratoconus"># 円錐角膜</a></li>
+                                                <li><a class="move-page" href="/jp/lens"># 眼内レンズ挿入術</a></li>
+                                                <li><a class="move-page" href="/jp/lasek"># ラセック</a></li>
+                                                <li><a class="move-page" href="/jp/lasik"># レーシック</a></li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="breadcrumb-area padding-100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="breadcrumb-content">
+                        <div class="col-12 px-0">
+                            <div class="page-title">
+                                <h1 class="heading-1">スヨンセのSurgery</h1>
+                                <h6 class="heading-6">涙膜を最適な状態にし、スマイルの結果を大幅に向上させた手術方法</h6>
+                            </div>
+                        </div>
+                        <ul class="page-list">
+                            <li><a href="/jp/index">Home</a></li>
+                            <li>Surgery Center</li>
+                            <li>SMILEPRO</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dental-section" style="margin-bottom:100px;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 pl-0">
+                        <div class="dental-img-area">
+                            <div class="dental-img">
+                                <img src="/front/new/visu01.jpg" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 d-flex align-items-center">
+                        <div class="dental-content-area">
+                            <div class="common-title padding-bottom-30">
+                                <h2 class="heading line-left">VISUMAX 800</h2>                          
+                                <h2 class="line-left">スマイルの頂点にある、</h2>
+                                <h2 class="line-left">TFCスマイルプロ</h2>
+                            </div>    
+                            <div class="dental-content">
+                                <p style="font-size:20px; color:red; font-style:italic;"><strong>"時間は短く、スピードはさらに速く!"</strong></p>
+                                <p>スマイルプロのレーザー照射時間は10秒以内です。 これはジャイスの超精密スキャニング技術で実現することができ、短いレーザー照射時間はサクションロス率を劇的に下げると同時に患者の心理的負担を最小限に抑えます。</p>
+                                <p><strong>Scanning Technology</strong></p>
+                                <p>VISUMAX 800のレーザースキャン技術は、角膜の特定の位置にレーザーが正確に照射されるかを決定する核心技術です。 したがって、レーザースキャン技術がどれだけ正確であるかは、実際の手術の結果と視力の質を左右します。ジャイスのレーザースキャニング技術は、現存するすべてのレンチキュール抽出方式の視力矯正術の中で最も精巧なレーザー照射を可能にします。
+
+</p>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="blog-page-content padding-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="blog-post-single-item">
+                            <div class="col-12">
+                                <div class="common-title padding-bottom-20">
+                                    <h2 class="heading line-left m-auto" style="font-size:20px;">VISUMAX800ならではの速い照射速度
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="thumb mt-5" style="text-align:center;">
+								<picture>
+								    <source srcset="/front/new/jp/mb_one.png" media="(max-width: 768px)">
+								    <source srcset="/front/new/jp/pc_one.png" media="(min-width: 769px)">
+								    <img src="/front/new/lazor.png">
+								</picture>
+                               
+                            </div>
+                        </div>
+
+                        <div class="blog-post-single-item mt-5">
+                            <div class="thumb mt-5" style="text-align:center;">
+								<picture>
+								    <source srcset="/front/new/jp/mb_two.png" media="(max-width: 768px)">
+								    <source srcset="/front/new/jp/pc_two.png" media="(min-width: 769px)">
+								    <img src="/front/new/moon.png">
+								</picture>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog-page-content" style="padding-top:10px; padding-bottom:10px; text-align: center;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 style="font-size:30px; font-style: italic; font-weight:600;"
+                         class="heading line-left m-auto">より予測可能な、TFCスマイルプロ</h2>
+                        <h2 style="font-size:30px; font-style: italic; font-weight:600;"
+                         class="heading line-left m-auto">高度近視と超難視も矯正可能!</h2> 
+                    </div>
+                </div>
+            </div>
+        </div>
+         <section class="neurology-section padding-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex align-items-center">                        
+                        <div class="neurology-content-area">                                        
+                            <div class="common-title padding-bottom-30">
+                                <h2 class="heading line-left">CentraLign</h2>                          
+                            </div>    
+                            <div class="neurology-content">
+                                <p>スマイルプロのセントラルライン(CentraLign)は、目の動きをより正確に感知し、目の中心を自動的にキャッチして最高の治療結果を提供します。</p>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="neurology-img-area">
+                            <img src="/front/new/visu02.gif" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ophtalmologue-section" style="margin-bottom:100px;">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="ophtalmologue-img">
+                                <img src="/front/new/visu03.gif" alt="img">
+                            </div>                            
+                        </div>
+                        <div class="col-lg-8 pr-0 d-flex align-items-center">
+                            <div class="ophtalmologue-content-area">
+                                <div class="common-title padding-bottom-30">
+                                    <h2 class="heading line-left">OcuLign</h2>                         
+                                </div>    
+                                <div class="ophtalmologue-content">
+                                    <p>オキュライン(OcuLign)機能で精密な乱視軸(Astigmatic axis)分析を通じて乱視軸の回転を補正し、最適な治療結果を患者に提供し、より完璧なソリューションを提供します。</p>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Main Area End Here-->
+
+    <th:block th:replace="fragments/jp/common :: jpFooter"></th:block>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/jp/common :: jpHeadSource">
+</head>
+
+<body>
+
+    <div class="preloader" th:replace="fragments/jp/common :: jpPreloader">
+    </div>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header-area">
+                    <div class="logo-area">
+                        <a href="/jp/index">
+                            <img src="/front/jp/assets/img/logo.png" alt="Nav Logo">
+                        </a>
+                    </div>
+                    <nav class="navbar navbar-area navbar-expand-lg sticky-navbar">
+                        <div class="container nav-container">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#fortis_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="cross-menu">
+                                    <span class="bar1"></span>
+                                    <span class="bar2"></span>
+                                    <span class="bar3"></span>
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="fortis_main_menu">
+                                <ul class="navbar-nav">
+                                    <li>
+                                        <a class="move-page" href="/jp/index">Home</a>
+                                    </li>
+									<li>
+                                        <a class="move-page" href="/jp/choice">スヨンセ眼科選択する瞬間</a>
+                                    </li>
+                                    <li>
+                                        <a class="move-page" href="/jp/equipments">Equipments
+                                            Center</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a class="center" href="javascript:void(0)">Surgery Center
+                                            <ul class="sub-menu">
+                                                <li><a class="move-page" href="/jp/smile"># スマイルレーシック</a></li>
+                                                <li><a class="move-page" href="/jp/smilePro"># スマイルプロ</a></li>
+                                                <li><a class="move-page" href="/jp/keratoconus"># 円錐角膜</a></li>
+                                                <li><a class="move-page" href="/jp/lens"># 眼内レンズ挿入術</a></li>
+                                                <li><a class="move-page" href="/jp/lasek"># ラセック</a></li>
+                                                <li><a class="move-page" href="/jp/lasik"># レーシック</a></li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="breadcrumb-area padding-100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="breadcrumb-content">
+                        <div class="col-12 px-0">
+                            <div class="page-title">
+                                <h1 class="heading-1">スヨンセのEQUIPMENTs</h1>
+                                <h6 class="heading-6">スヨンセ眼科の高い専門性を実現させてくれる先端レーザー機器です。</h6>
+                            </div>
+                        </div>
+                        <ul class="page-list">
+                            <li><a href="/jp/index">Home</a></li>
+                            <li>Equipments Center</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+		 <section class="dental-section mt-5">
+            <div class="container-fluid">
+                <div class="row" style="justify-content: flex-end;">
+                    <div class="col-lg-4 col-md-12 d-flex align-items-center">
+                        <div class="dental-content-area">
+                            <div class="common-title padding-bottom-30">
+                                <h2 class="heading line-left">VISUMAX 800</h2>
+                            </div>
+                            <div class="check-box-area">
+                                <ul class="check-box">
+                                    <li>∙ 手術過程のライブモニタリング</li>
+                                    <li>∙ ジャイスの超精密眼科手術用顕微鏡</li>
+                                    <li>∙ 患者の微細な動きまで自動補正する自動圧力補正システムを搭載</li>
+                                    <li>∙ ジャイスのスキャニング技術により、10秒以内のレーザー照射時間を実現</li>
+                                    <li>∙ 眼球中心軸、乱視軸補正機能を搭載</li>
+                                    <li>∙ 人間工学的に設計されたコンタクトレンズ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 pr-0">
+                        <div class="dental-img-area right">
+                            <div class="dental-img">
+                                <img src="/front/new/visumax800.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dental-section mt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 pl-0">
+                        <div class="dental-img-area">
+                            <div class="dental-img">
+                                <img src="/front/jp/assets/img/equipment/11.png" alt="img">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 d-flex align-items-center">
+                        <div class="dental-content-area">
+                            <div class="common-title padding-bottom-30">
+                                <h2 class="heading line-left">VisuMax</h2>
+                            </div>
+                            <div class="check-box-area">
+                                <ul class="check-box">
+                                    <li>∙ 第3世代視力矯正術 ティアフィルムコントロールスマイル（TFC SMILE)</li>
+                                    <li>∙ 高度近視で角膜混濁や近視退行の発生の懸念を最小化</li>
+                                    <li>∙ Bevel-in Side cut（135度）で安全性を強化</li>
+                                    <li>∙ 低い圧力のsuctionで手術中の眼圧上昇を最小化</li>
+                                    <li>∙ 角膜固定で、結膜切除術の微小細胞保護効果、術後乾燥症の誘発を最小化</li>
+                                    <li>∙ 3µm 以下の小さなレーザー spot size</li>
+                                    <li>∙ 500kHzの高速（500,000回/秒）</li>
+                                    <li>∙ 曲面コンタクトレンズの使用でカスタマイズされた角膜形成</li>
+                                    <li>∙ 0.15μJの低刺激エネルギー</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dental-section mt-5">
+            <div class="container-fluid">
+                <div class="row" style="justify-content: flex-end;">
+                    <div class="col-lg-4 col-md-12 d-flex align-items-center">
+                        <div class="dental-content-area">
+                            <div class="common-title padding-bottom-30">
+                                <h2 class="heading line-left">AmarisRED</h2>
+                            </div>
+                            <div class="check-box-area">
+                                <ul class="check-box">
+                                    <li>∙ 1050Hzアイトラッキング、1050Hzレーザー照射：現存最高スペック</li>
+                                    <li>∙ 0.54mmの最小のレーザービーム</li>
+                                    <li>∙ スマートパルステクノロジーで最も滑らかな切断面を実現</li>
+                                    <li>∙ 反応時間0、眼球の線までリアルタイム、7次元の眼球トラッキング</li>
+                                    <li>∙ オールレーザーラセックに特化したレーザー：迅速な手術、迅速な回復、痛み減少</li>
+                                    <li>∙ Sirius連動：角膜ウェーブフロント手術（Corneal wavefront ablation）</li>
+                                    <li>∙ スマートパルス : 3次元立体アルゴリズム設計、角膜の実際の湾曲率に最も近く切断する技術</li>
+                                    <li>=> 眼球の形状に合わせてx、y、z値を計算し、精密で立体的な手術</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 pr-0">
+                        <div class="dental-img-area right">
+                            <div class="dental-img">
+                                <img src="/front/jp/assets/img/equipment/22.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dental-section mt-5 mb-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 pl-0">
+                        <div class="dental-img-area">
+                            <div class="dental-img">
+                                <img src="/front/jp/assets/img/equipment/33.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 d-flex align-items-center">
+                        <div class="dental-content-area">
+                            <div class="common-title padding-bottom-30">
+                                <h2 class="heading line-left">EX500 StramLight<span
+                                        style="vertical-align: super; font-size:12px;">TM</span></h2>
+                            </div>
+                            <div class="check-box-area">
+                                <ul class="check-box">
+                                    <li>∙ 眼球追跡速度 1050Hz, 500Hz レーザー照射</li>
+                                    <li>∙ 最も広いFDA承認範囲（近視-12、乱視-6ディオプター）</li>
+                                    <li>∙ 角膜切断量が少ないレーザー：超高度近視、乱視矯正の最適化 </li>
+                                    <li>∙ 広いレーザー照射範囲確保による光拡散抑制</li>
+                                    <li>∙ 切削量の最小化による角膜混濁と乾燥症の抑制</li>
+                                    <li>∙ 中心ずれ治療及び近視退行再矯正に優れている</li>
+                                    <li>∙ 角膜切断量が少ないレーザー：超高度近視、乱視矯正の最適化</li>
+                                    <li>∙ vario/oculyzer 連動： T-CAT（topography guided ablation）</li>
+                                    <li>∙ 最高レベルの眼球追跡機能を完成</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!--Main Area End Here-->
+
+    <th:block th:replace="fragments/jp/common :: jpFooter"></th:block>
+</body>
+
+</html>

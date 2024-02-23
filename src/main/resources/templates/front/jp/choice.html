@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/jp/common :: jpHeadSource">
+</head>
+
+<body>
+
+	<div class="preloader" th:replace="fragments/jp/common :: jpPreloader">
+	</div>
+	<header id="header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="header-area">
+					<div class="logo-area">
+						<a href="/jp/index">
+							<img src="/front/jp/assets/img/logo.png" alt="Nav Logo">
+						</a>
+					</div>
+					<nav class="navbar navbar-area navbar-expand-lg sticky-navbar">
+						<div class="container nav-container">
+							<button class="navbar-toggler" type="button" data-toggle="collapse"
+								data-target="#fortis_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="cross-menu">
+									<span class="bar1"></span>
+									<span class="bar2"></span>
+									<span class="bar3"></span>
+								</span>
+							</button>
+							<div class="collapse navbar-collapse" id="fortis_main_menu">
+								<ul class="navbar-nav">
+									<li>
+										<a class="move-page" href="/jp/index">Home</a>
+									</li>
+									<li>
+										<a class="move-page active" href="/jp/choice">スヨンセ眼科選択する瞬間</a>
+									</li>
+									<li>
+										<a class="move-page" href="/jp/equipments">Equipments
+											Center</a>
+									</li>
+									<li class="menu-item-has-children">
+										<a class="center" href="javascript:void(0)">Surgery Center
+											<ul class="sub-menu">
+												<li><a class="move-page" href="/jp/smile"># スマイルレーシック</a></li>
+												<li><a class="move-page" href="/jp/smilePro"># スマイルプロ</a></li>
+												<li><a class="move-page" href="/jp/keratoconus"># 円錐角膜</a></li>
+												<li><a class="move-page" href="/jp/lens"># 眼内レンズ挿入術</a></li>
+												<li><a class="move-page" href="/jp/lasek"># ラセック</a></li>
+												<li><a class="move-page" href="/jp/lasik"># レーシック</a></li>
+											</ul>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<main>
+		<section class="breadcrumb-area padding-100">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="breadcrumb-content">
+						<div class="col-12 px-0">
+							<div class="page-title">
+								<h1 class="heading-1">スヨンセ眼科選択する瞬間!</h1>
+								<h6 class="heading-6">お客様がスヨンセを選択した瞬間、お客様は他の病院では得られない「安全」というプレミアムを享受することができます。</h6>
+							</div>
+						</div>
+						<ul class="page-list">
+							<li><a href="/jp/index">Home</a></li>
+							<li>スヨンセ眼科選択する瞬間!</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about-us-section padding-top-100">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-7 col-md-12 px-0">
+						<div class="about-img-area">
+							<img src="/front/new/prize.png" alt="img" style="box-shadow:0px 5px 5px rgba(0,0,0,0.2);">
+						</div>
+					</div>
+					<div class="col-lg-5 col-md-12">
+						<div class="about-content-area">
+							<h4 class="heading-04">プレミアム特典</h4>
+							<div class="common-title">
+								<h2 class="heading line-none">スヨンセを選択</h2>
+								<h2 class="heading line-none">した瞬間</h2>
+							</div>
+							<div class="padding-top-20 padding-bottom-40">
+								<p>お客様がスヨンセを選択した瞬間、お客様は他の病院では得られない「安全」というプレミアムを享受することができます。
+</p>
+								<p>アジア初の円錐角膜(角膜拡張症)治療分野
+'The Lord of the Keraring'受賞に続き、アジア初の'Master of Intacs'受賞、世界最多の円錐角膜手術(インタックス)症例認定、その他様々な特殊治療法に対する世界初及び最多症例に至るまで、スヨンセの医療スタッフは世界の医学をリードしています。
+</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="latest-stories padding-95">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<div class="common-title padding-bottom-50">
+							<h2 class="heading line-left m-auto">講演活動</h2>
+							<h6 class="heading-6 heading-subtitle">- スヨンセ眼科の世界的な眼科学会での講演活動です - </h6>
+						</div>
+					</div>
+					<div class="carousel-right-area">
+						<div class="col-lg-12">
+							<div class="storiest-carousel">
+								<div class="item">
+									<div class="carousel-img">
+										<img src="/front/new/con01.png" alt="img">
+									</div>
+									<div class="catousel-content">
+										<div class="hover-icon">
+											<a href="/front/new/con01.png" target="_blank">
+												<span class="icon">
+													<i class="flaticon-add-plus-button"></i>
+												</span>
+											</a>
+										</div>
+										<div class="stories-text">
+											<div class="date">Conference</div>
+											<div class="text">
+												<h6 class="heading-06">ボストン世界角膜交差結合術学会、円錐角膜の最新知見発表</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--// Carousel Item-->
+								<div class="item">
+									<div class="carousel-img">
+										<img src="/front/new/con02.png" alt="img">
+									</div>
+									<div class="catousel-content">
+										<div class="hover-icon">
+											<a href="/front/new/con02.png" target="_blank">
+												<span class="icon">
+													<i class="flaticon-add-plus-button"></i>
+												</span>
+											</a>
+										</div>
+										<div class="stories-text">
+											<div class="date">Conference</div>
+											<div class="text">
+												<h6 class="heading-06">バンコクアジア太平洋屈折矯正レーザー手術学会、「ビジュマックスを用いた円錐角膜及び角膜拡張症の治療」発表</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--// Carousel Item-->
+								<div class="item">
+									<div class="carousel-img">
+										<img src="/front/new/con03.png" alt="img">
+									</div>
+									<div class="catousel-content">
+										<div class="hover-icon">
+											<a href="/front/new/con03.png" target="_blank">
+												<span class="icon">
+													<i class="flaticon-add-plus-button"></i>
+												</span>
+											</a>
+										</div>
+										<div class="stories-text">
+											<div class="date">Conference</div>
+											<div class="text">
+												<h6 class="heading-06">シンガポールアジア太平洋屈折矯正レーザー手術学会「To compare one year Outcome of Combined SMILE and Lower Energy Accelerated CXL(SMILE Xtra) with SMILE」発表
+</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--// Carousel Item-->
+								<div class="item">
+									<div class="carousel-img">
+										<img src="/front/new/con04.png" alt="img">
+									</div>
+									<div class="catousel-content">
+										<div class="hover-icon">
+											<a href="/front/new/con04.png" target="_blank">
+												<span class="icon">
+													<i class="flaticon-add-plus-button"></i>
+												</span>
+											</a>
+										</div>
+										<div class="stories-text">
+											<div class="date">Conference</div>
+											<div class="text">
+												<h6 class="heading-06">上海アジア太平洋屈折矯正レーザー手術学会「The Effects of The Tear Film on The Refractive Predictability of SMILE : How to Improve the Accuracy of The Nomogram for SMILE」発表
+</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--// Carousel Item-->
+								<div class="item">
+									<div class="carousel-img">
+										<img src="/front/new/con05.png" alt="img">
+									</div>
+									<div class="catousel-content">
+										<div class="hover-icon">
+											<a href="/front/new/con05.png" target="_blank">
+												<span class="icon">
+													<i class="flaticon-add-plus-button"></i>
+												</span>
+											</a>
+										</div>
+										<div class="stories-text">
+											<div class="date">Conference</div>
+											<div class="text">
+												<h6 class="heading-06">ASCRS(米国屈折矯正手術学会)'Effects of Tear Film on Refractive Predictability'講演
+</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="latest-stories padding-95">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<div class="common-title padding-bottom-50">
+							<h2 class="heading line-left m-auto">Education</h2>
+							<h6 class="heading-6 heading-subtitle">- 수연세안과의 국내 안과학회 강연 및 의료진 교육활동 입니다. - </h6>
+						</div>
+					</div>
+					<div class="carousel-left-area">
+						<div class="col-lg-12">
+							<div class="storiest-carousel">
+								<div class="item">
+									<div class="carousel-img">
+										<img src="/front/new/edu01.png" alt="img">
+									</div>
+									<div class="catousel-content">
+										<div class="hover-icon">
+											<a href="/front/new/edu01.png" target="_blank">
+												<span class="icon">
+													<i class="flaticon-add-plus-button"></i>
+												</span>
+											</a>
+										</div>
+										<div class="stories-text">
+											<div class="date">Education</div>
+											<div class="text">
+												<h6 class="heading-06">世界視力矯正協会(RSA)カンファレンス講演</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--// Carousel Item-->
+								<div class="item">
+									<div class="carousel-img">
+										<img src="/front/new/edunew.png" alt="img">
+									</div>
+									<div class="catousel-content">
+										<div class="hover-icon">
+											<a href="/front/new/edunew.png" target="_blank">
+												<span class="icon">
+													<i class="flaticon-add-plus-button"></i>
+												</span>
+											</a>
+										</div>
+										<div class="stories-text">
+											<div class="date">Education</div>
+											<div class="text">
+												<h6 class="heading-06">大韓眼科学会学術大会「多様化する眼内レンズ挿入術の最新知見」講演</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--// Carousel Item-->
+								<div class="item">
+									<div class="carousel-img">
+										<img src="/front/new/edu03.png" alt="img">
+									</div>
+									<div class="catousel-content">
+										<div class="hover-icon">
+											<a href="/front/new/edu03.png" target="_blank">
+												<span class="icon">
+													<i class="flaticon-add-plus-button"></i>
+												</span>
+											</a>
+										</div>
+										<div class="stories-text">
+											<div class="date">Education</div>
+											<div class="text">
+												<h6 class="heading-06">サウジアラビア医療スタッフ教育</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--// Carousel Item-->
+								<div class="item">
+									<div class="carousel-img">
+										<img src="/front/new/edu04.png" alt="img">
+									</div>
+									<div class="catousel-content">
+										<div class="hover-icon">
+											<a href="/front/new/edu04.png" target="_blank">
+												<span class="icon">
+													<i class="flaticon-add-plus-button"></i>
+												</span>
+											</a>
+										</div>
+										<div class="stories-text">
+											<div class="date">Education</div>
+											<div class="text">
+												<h6 class="heading-06">ベトナム医療スタッフ教育
+</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--// Carousel Item-->
+								<div class="item">
+									<div class="carousel-img">
+										<img src="/front/new/edu05.png" alt="img">
+									</div>
+									<div class="catousel-content">
+										<div class="hover-icon">
+											<a href="/front/new/edu05.png" target="_blank">
+												<span class="icon">
+													<i class="flaticon-add-plus-button"></i>
+												</span>
+											</a>
+										</div>
+										<div class="stories-text">
+											<div class="date">Education</div>
+											<div class="text">
+												<h6 class="heading-06">香港医療スタッフ教育</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<th:block th:replace="fragments/jp/common :: jpFooter"></th:block>
+</body>
+
+</html>

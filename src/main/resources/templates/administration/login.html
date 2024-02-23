@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/admin/common :: adminHead('관리자페이지')">
+
+</head>
+
+<body>
+	<div id="login-page">
+		<div class="container">
+			<form class="form-login" action="/signinProcess" method="POST">
+				<h2 class="form-login-heading">LOGIN</h2>
+				<div class="login-wrap">
+					<input type="text" 
+					class="form-control" 
+					placeholder="ID를 입력하세요" 
+					required="required"
+					name="username"
+					autofocus> <br> 
+					<input type="password" 
+					class="form-control" 
+					placeholder="Password를 입력하세요"
+					name="password"
+					required="required"> 
+					<label class="checkbox"> 
+					</label>
+					<button class="btn btn-theme btn-block" type="submit">
+						<i class="fa fa-lock"></i> LOGIN
+					</button>
+				</div>
+				<div class="alert alert-danger" role="alert" th:if="${param.error}">
+		    		<p class="alert alert-danger" th:text="${param.exception}"></p>
+		        </div>
+			</form>
+			
+		</div>
+	</div>
+	 <th:block th:replace="fragments/admin/common :: adminScript"></th:block>
+	<script>
+    $.backstretch("/front/jp/assets/img/japan/main01.png", {
+      speed: 500
+    });
+  </script>
+</body>
+
+</html>

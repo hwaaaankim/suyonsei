@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/en/common :: enHeadSource">
+</head>
+
+<body>
+
+    <div class="preloader" th:replace="fragments/en/common :: enPreloader">
+    </div>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header-area">
+                    <div class="logo-area">
+                        <a href="/en/index">
+                            <img src="/front/en/assets/img/logo.png" alt="Nav Logo">
+                        </a>
+                    </div>
+                    <nav class="navbar navbar-area navbar-expand-lg sticky-navbar">
+                        <div class="container nav-container">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#fortis_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="cross-menu">
+                                    <span class="bar1"></span>
+                                    <span class="bar2"></span>
+                                    <span class="bar3"></span>
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="fortis_main_menu">
+                                <ul class="navbar-nav">
+                                    <li>
+                                        <a class="move-page" href="/en/index">Home</a>
+                                    </li>
+									 <li>
+                                        <a class="move-page" href="/en/choice">The Moment You Choose Su Yonsei!</a>
+                                    </li>
+                                    <li>
+                                        <a class="move-page" href="/en/equipments">Equipments
+                                            Center</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a class="center" href="javascript:void(0)">Surgery Center
+                                            <ul class="sub-menu">
+                                                <li><a class="move-page" href="/en/smile"># SMILE LASIK</a></li>
+                                                <li><a class="move-page" href="/en/smilePro"># SMILE PRO</a></li>
+                                                <li><a class="move-page" href="/en/keratoconus"># Keratoconus</a></li>
+                                                <li><a class="move-page" href="/en/lens"># Lens Implantation
+                                                        Surgery</a></li>
+                                                <li><a class="move-page" href="/en/lasek"># LASEK</a></li>
+                                                <li><a class="move-page" href="/en/lasik"># LASIK</a></li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="breadcrumb-area padding-100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="breadcrumb-content">
+                        <div class="col-12 px-0">
+                            <div class="page-title">
+                                <h1 class="heading-1">SU Yonsei's Vision Correction Surgery Center </h1>
+                                <h6 class="heading-6">This surgical method enhances the outcomes of the SMILE procedure
+                                    by optimizing the tear film layer.</h6>
+                            </div>
+                        </div>
+                        <ul class="page-list">
+                            <li><a href="/en/index">Home</a></li>
+                            <li>Surgery Center</li>
+                            <li>Smile Lasik</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="teeth-canel padding-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="canel-content-area">
+                            <div class="common-title padding-bottom-20">
+                                <h3 class="heading-4 line-none">Tear Film Controlled SMILE: Optimizing the Tear Film
+                                    Layer</h3>
+                            </div>
+                            <p>Not all SMILEs have the same result. This surgical method enhances the outcomes of the
+                                SMILE procedure by optimizing the tear film layer. Developed exclusively by the medical
+                                team at SU Yonsei Eye Clinic after five years of research, it was introduced in
+                                international conferences in 2018 and published in Graefe's Archive, an SCI-indexed
+                                journal.
+                            </p>
+                            <!-- video popup toggler -->
+
+                        </div>
+                    </div>
+                    <div class="col-lg-7 pr-lg-0">
+                        <div class="canel-img-area">
+                            <img src="/front/en/assets/img/surgery/1.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="neurology-section padding-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 d-flex align-items-center">
+                        <div class="neurology-content-area">
+                            <div class="common-title padding-bottom-30">
+                                <h2 class="heading line-left">SMall Incision Lenticule Extraction</h2>
+                            </div>
+                            <div class="check-box-area">
+                                <ul class="check-box">
+                                    <li>- High predictability of surgical outcomes</li>
+                                    <li>- Minimization and prevention of blurriness post-surgery</li>
+                                    <li>- Maximization of advantages at both low and high energy levels</li>
+                                    <li>- Reduced likelihood of myopia regression</li>
+                                    <li>- Precise astigmatism correction through centralized alignment</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="neurology-img-area">
+                            <img src="/front/en/assets/img/eng/smile01.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="neurology-img-area">
+                            <img src="/front/en/assets/img/eng/smile02.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Main Area End Here-->
+
+    <th:block th:replace="fragments/en/common :: enFooter"></th:block>
+</body>
+
+</html>

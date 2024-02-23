@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/jp/common :: jpHeadSource">
+</head>
+
+<body>
+
+    <div class="preloader" th:replace="fragments/jp/common :: jpPreloader">
+    </div>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header-area">
+                    <div class="logo-area">
+                        <a href="/jp/index">
+                            <img src="/front/jp/assets/img/logo.png" alt="Nav Logo">
+                        </a>
+                    </div>
+                    <nav class="navbar navbar-area navbar-expand-lg sticky-navbar">
+                        <div class="container nav-container">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#fortis_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="cross-menu">
+                                    <span class="bar1"></span>
+                                    <span class="bar2"></span>
+                                    <span class="bar3"></span>
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="fortis_main_menu">
+                                <ul class="navbar-nav">
+                                    <li>
+                                        <a class="move-page" href="/jp/index">Home</a>
+                                    </li>
+									<li>
+                                        <a class="move-page" href="/jp/choice">スヨンセ眼科選択する瞬間</a>
+                                    </li>
+                                    <li>
+                                        <a class="move-page" href="/jp/equipments">Equipments
+                                            Center</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a class="center active" href="javascript:void(0)">Surgery Center
+                                            <ul class="sub-menu">
+                                                <li><a class="move-page" href="/jp/smile"># スマイルレーシック</a></li>
+                                                <li><a class="move-page" href="/jp/smilePro"># スマイルプロ</a></li>
+                                                <li><a class="move-page" href="/jp/keratoconus"># 円錐角膜</a></li>
+                                                <li><a class="move-page" href="/jp/lens"># 眼内レンズ挿入術</a></li>
+                                                <li><a class="move-page" href="/jp/lasek"># ラセック</a></li>
+                                                <li><a class="move-page" href="/jp/lasik"># レーシック</a></li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="breadcrumb-area padding-100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="breadcrumb-content">
+                        <div class="col-12 px-0">
+                            <div class="page-title">
+                                <h1 class="heading-1">スヨンセのSurgery</h1>
+                                <h6 class="heading-6">角膜が薄すぎる場合、形状が悪い場合、屈折異常がひどすぎて角膜を削る手術が負担になる場合、レーザー手術の
+                                    良い選択肢となる手術方法</h6>
+                            </div>
+                        </div>
+                        <ul class="page-list">
+                            <li><a href="/jp/index">Home</a></li>
+                            <li>Surgery Center</li>
+                            <li>Phakic Intraocular Lens implantation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="teeth-canel padding-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="canel-content-area">
+                            <div class="common-title padding-bottom-20">
+                                <h2 class="heading line-none">眼内レンズの専門家、スヨンセ！</h2>
+                            </div>
+                            <p>角膜が薄すぎる場合、形が悪い場合、屈折異常がひどく角膜を削る手術が負担になる場合、レーザー手術の良い代替となる手術方法で
+                                挿入される位置によって前方レンズと後方レンズに分けられます。
+                            </p>
+                            <!-- video popup toggler -->
+                            <div class="check-box-area">
+                                <ul class="check-box">
+                                    <li>- 視力矯正専門医にレンズ挿入術を教える医療スタッフ</li>
+                                    <li>- 現存するあらゆる種類の眼内レンズ挿入術を熟練した技術で丁寧に</li>
+                                    <li>- 目に合ったレンズの推薦におけるバランスの取れた感覚</li>
+                                    <li>- 手術前検眼、虹彩形成術、術後管理を1人の執刀医が担当</li>
+                                    <li>- あらゆる種類の合併症の治療が可能</li>
+                                    <li>- 手術後の継続的なモニタリング: 内皮細胞、水晶体、網膜のチェック</li>
+                                    <li>- 眼内レンズ最上位認証機関</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 pr-lg-0">
+                        <div class="canel-img-area">
+                            <img src="/front/jp/assets/img/surgery/2.png" alt="img">
+                            <p>* <strong>前方レンズ(アルティサン/アルティフレックス)</strong> best skill, Honor Awards, Global Instructor, World’s
+                                Great Surgeon</p>
+                            <p>* <strong>後方レンズ(EVO+ICL)</strong> Global Expert Surgeon, World Class Pioneer, EVO+Visian
+                                ICL 1,000case
+                                公式認証病院
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--// Teeth-canel Section End Here-->
+
+        <!-- Our Other Service Section Start Here-->
+        <section class="our-mission-section mb-5" id="lens-tab">
+            <div class="container">
+                <div class="row">
+                    <!--Common Title-->
+                    <div class="col-12">
+                        <div class="common-title padding-bottom-20">
+                            <h2 class="heading line-left m-auto">Lens</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <!--Mission Tab Area-->
+                        <div class="mission-tab-area padding-top-60">
+                            <!-- <div class="col-lg-6 col-md-12"> -->
+                            <div class="tab-navbar-area">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#artisan"
+                                            role="tab" aria-controls="home" aria-selected="true">アルティサン(Artisan)</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#artiflex"
+                                            role="tab" aria-controls="profile" aria-selected="false">アルティフレックス(Artiflex)</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#evo" role="tab"
+                                            aria-controls="contact" aria-selected="false">EVO+ICL</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#echo" role="tab"
+                                            aria-controls="contact" aria-selected="false">ECHO<br>(Exhaling
+                                            Contact lens by High-tech Operation)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content-area">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="artisan" role="tabpanel"
+                                        aria-labelledby="home-tab">
+                                        <div class="tab-content">
+                                            <div class="col-lg-8 col-md-12">
+                                                <div class="paragraph-wrap">
+                                                    <div class="paragraph-area padding-30">
+                                                        <div class="check-box-area">
+                                                            <ul class="check-box">
+                                                                <li>- 合併症の最小化</li>
+                                                                <li>- 超高度近視、遠視矯正</li>
+                                                                <li>- 眼内挿入レンズ初のFDA承認</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                                <div class="mission-img-area">
+                                                    <img src="/front/jp/assets/img/surgery/55.png" alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="artiflex" role="tabpanel"
+                                        aria-labelledby="profile-tab">
+                                        <div class="tab-content">
+                                            <div class="col-lg-8 col-md-12">
+                                                <div class="paragraph-wrap">
+                                                    <div class="paragraph-area padding-30">
+                                                        <div class="check-box-area">
+                                                            <ul class="check-box">
+                                                                <li>- 合併症の最小化と迅速な回復力</li>
+                                                                <li>- 光拡散を最小限に抑えた眼内レンズ</li>
+                                                                <li>- 虹彩固定方式使用、乱視軸変化のない安定性</li>
+                                                                <li>- 安全なレンズの除去</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                                <div class="mission-img-area">
+                                                    <img src="/front/jp/assets/img/surgery/66.png" alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="evo" role="tabpanel" aria-labelledby="contact-tab">
+                                        <div class="tab-content">
+                                            <div class="col-lg-8 col-md-12">
+                                                <div class="paragraph-wrap">
+                                                    <div class="paragraph-area padding-30">
+                                                        <div class="check-box-area">
+                                                            <ul class="check-box">
+                                                                <li>- (-0.5)から(-14)ディオプターまでの球面パワーで拡張された直径範囲と一緒に光学部が最大
+                                                                    10%より大きくなり、夜間の光のにじみが減少</li>
+                                                                <li>- 切開部3mm以下、1日で回復可能！</li>
+                                                                <li>- 20年以上100万眼以上使用、世代を経て完成した最も先進的なレンズ</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                                <div class="mission-img-area">
+                                                    <img src="/front/jp/assets/img/surgery/77.png" alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="echo" role="tabpanel" aria-labelledby="contact-tab">
+                                        <div class="tab-content">
+                                            <div class="col-lg-8 col-md-12">
+                                                <div class="paragraph-wrap">
+                                                    <div class="paragraph-area padding-30">
+                                                        <div class="check-box-area">
+                                                            <ul class="check-box">
+                                                                <li>- 快適で安全な房水の流れ</li>
+                                                                <li>- アップグレードされたサポート構造と技術で快適な視力矯正</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                                <div class="mission-img-area">
+                                                    <img src="/front/jp/assets/img/surgery/88.png" alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--// Our Other Service Section End Here-->
+
+
+
+        <!--Rooth Canal Price Section Start Here-->
+        <section class="rooth-canal-price-section mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="price-area" style="box-shadow:0px 5px 5px rgba(0,0,0,0.2);">
+                        <div class="left-column">
+                            <div class="price">乱視矯正レンズ</div>
+                            <div class="common-title">
+                                <h6 class="heading-5 line-none">眼内レンズの中で乱視まで精巧に矯正できるレンズをToricレンズといいます。
+                                    近視と乱視度数が刻まれたレンズを挿入することで、超近視と乱視を1回の手術で矯正する画期的な手術です。
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="right-column">
+                            <ul>
+                                <li>
+                                    <span class="left">Toric Artiflex</span>
+                                    <span class="right">速い回復、乱視矯正の安定性で他の追随を
+                                        許しません
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="left">Toric Artisan</span>
+                                    <span class="right">近視、乱視の合度数が15ディオプター以上の場合
+                                        選択
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="left">EVO+Toric ICL</span>
+                                    <span class="right">虹彩切開なしで超高度近視と遠視の同時矯正可能</span>
+                                </li>
+                                <li>
+                                    <span class="left">バイオプティクス</span>
+                                    <span class="right">一般眼内レンズ挿入後
+                                        2次手術としてラセック/レーシック
+                                        追加視力矯正
+                                    </span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="blog-page-content padding-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="blog-post-single-item">
+                            <div class="col-12">
+                                <div class="common-title padding-bottom-20">
+                                    <h2 class="heading line-left m-auto">Toric Artiflex</h2>
+                                </div>
+                            </div>
+                            <div class="thumb mt-5">
+                                <img src="/front/jp/assets/img/japan/toric.png" style="box-shadow:0px 5px 5px rgba(0,0,0,0.2);">
+                            </div>
+
+                        </div>
+                        <!--// Blog Single Item-->
+
+                        <div class="blog-post-single-item mt-5">
+                            <div class="col-12">
+                                <div class="common-title padding-bottom-20">
+                                    <h2 class="heading line-left m-auto">EVO+Toric ICL</h2>
+                                </div>
+                            </div>
+                            <div class="thumb mt-5">
+                                <img src="/front/jp/assets/img/japan/evo.png" style="box-shadow:0px 5px 5px rgba(0,0,0,0.2);">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// Google Map End-->
+
+    </main>
+
+     <th:block th:replace="fragments/jp/common :: jpFooter"></th:block>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/en/common :: enHeadSource">
+</head>
+
+<body>
+
+    <div class="preloader" th:replace="fragments/en/common :: enPreloader">
+    </div>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header-area">
+                    <div class="logo-area">
+                        <a href="/en/index">
+                            <img src="/front/en/assets/img/logo.png" alt="Nav Logo">
+                        </a>
+                    </div>
+                    <nav class="navbar navbar-area navbar-expand-lg sticky-navbar">
+                        <div class="container nav-container">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#fortis_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="cross-menu">
+                                    <span class="bar1"></span>
+                                    <span class="bar2"></span>
+                                    <span class="bar3"></span>
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="fortis_main_menu">
+                                <ul class="navbar-nav">
+                                    <li>
+                                        <a class="move-page" href="/en/index">Home</a>
+                                    </li>
+									 <li>
+                                        <a class="move-page" href="/en/choice">The Moment You Choose Su Yonsei!</a>
+                                    </li>
+                                    <li>
+                                        <a class="move-page" href="/en/equipments">Equipments
+                                            Center</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a class="center" href="javascript:void(0)">Surgery Center
+                                            <ul class="sub-menu">
+                                                <li><a class="move-page" href="/en/smile"># SMILE LASIK</a></li>
+                                                <li><a class="move-page" href="/en/smilePro"># SMILE PRO</a></li>
+                                                <li><a class="move-page" href="/en/keratoconus"># Keratoconus</a></li>
+                                                <li><a class="move-page" href="/en/lens"># Lens Implantation
+                                                        Surgery</a></li>
+                                                <li><a class="move-page" href="/en/lasek"># LASEK</a></li>
+                                                <li><a class="move-page" href="/en/lasik"># LASIK</a></li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="breadcrumb-area padding-100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="breadcrumb-content">
+                        <div class="col-12 px-0">
+                            <div class="page-title">
+                                <h1 class="heading-1">SU Yonsei's Top-Tier Equipment</h1>
+                                <h6 class="heading-6">SU Yonsei Eye Clinic is equipped with state-of-the-art laser
+                                    technology that reflects our high level of expertise.</h6>
+                            </div>
+                        </div>
+                        <ul class="page-list">
+                            <li><a href="/en/index">Home</a></li>
+                            <li>Equipments Center</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<section class="dental-section mt-5">
+            <div class="container-fluid">
+                <div class="row" style="justify-content: flex-end;">
+                    <div class="col-lg-4 col-md-12 d-flex align-items-center">
+                        <div class="dental-content-area">
+                            <div class="common-title padding-bottom-30">
+                                <h2 class="heading line-left">VISUMAX 800</h2>
+                            </div>
+                            <div class="check-box-area">
+                                <ul class="check-box">
+                                    <li>∙ Live monitoring of the surgical process</li>
+                                    <li>∙ ZEISS high-precision ophthalmic surgical microscope</li>
+                                    <li>∙ Automatic pressure adjustment system compensating for even the slightest patient movements</li>
+                                    <li>∙ Very short laser time under 10 seconds, made possible by ZEISS scanning technology</li>
+                                    <li>∙ CentraLign and OcuLign technology to adjust for visual axis and astigmatism alignment </li>
+                                    <li>∙ Ergonomically designed contact glass</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 pr-0">
+                        <div class="dental-img-area right">
+                            <div class="dental-img">
+                                <img src="/front/new/visumax800.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dental-section mt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 pl-0">
+                        <div class="dental-img-area">
+                            <div class="dental-img">
+                                <img src="/front/en/assets/img/equipment/11.png" alt="img">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 d-flex align-items-center">
+                        <div class="dental-content-area">
+                            <div class="common-title padding-bottom-30">
+                                <h2 class="heading line-left">VisuMax</h2>
+                            </div>
+                            <div class="check-box-area">
+                                <ul class="check-box">
+                                    <li>∙ 3rd Generation Laser Refractive Surgery: Tear Film Controlled SMILE (TFC
+                                        SMILE)</li>
+                                    <li>∙ Minimizes the risk of corneal opacity and myopic regression, especially in
+                                        high myopia</li>
+                                    <li>∙ Enhanced safety with a Bevel-in Side cut at 135 degrees</li>
+                                    <li>∙ Low-pressure suction to minimize intraocular pressure rise during surgery</li>
+                                    <li>∙ Corneal suction, protecting conjunctival goblet cells, and reducing
+                                        post-surgery dry eye</li>
+                                    <li>∙ Small laser spot size under 3µm</li>
+                                    <li>∙ Fast speed of 500kHz (500,000 pulses per second)</li>
+                                    <li>∙ Customized corneal fixation with the use of curved contact lenses</li>
+                                    <li>∙ Minimal tissue damage with low energy of 0.15µJ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dental-section mt-5">
+            <div class="container-fluid">
+                <div class="row" style="justify-content: flex-end;">
+                    <div class="col-lg-4 col-md-12 d-flex align-items-center">
+                        <div class="dental-content-area">
+                            <div class="common-title padding-bottom-30">
+                                <h2 class="heading line-left">AmarisRED</h2>
+                            </div>
+                            <div class="check-box-area">
+                                <ul class="check-box">
+                                    <li>∙ 1050Hz eye tracking, 1050Hz laser delivery: the highest specification
+                                        available</li>
+                                    <li>∙ The smallest laser beam at 0.54mm</li>
+                                    <li>∙ Smoothest ablation surface achieved with Smart Pulse Technology</li>
+                                    <li>∙ Instant response time, real-time tracking of the eye's rotation, with
+                                        7-dimensional eye tracking</li>
+                                    <li>∙ Laser specialized for all-laser LASIK: faster surgery, quicker recovery, less
+                                        pain</li>
+                                    <li>∙ Integration with Sirius: Corneal wavefront guided ablation</li>
+                                    <li>∙ SmartPulse: 3D algorithm design for ablation matching the actual curvature of
+                                        the cornea, </li>
+                                    <li>=> calculating x, y, z values of the eye's shape for precise, three-dimensional
+                                        surgery</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 pr-0">
+                        <div class="dental-img-area right">
+                            <div class="dental-img">
+                                <img src="/front/en/assets/img/equipment/22.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dental-section mt-5 mb-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 pl-0">
+                        <div class="dental-img-area">
+                            <div class="dental-img">
+                                <img src="/front/en/assets/img/equipment/33.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 d-flex align-items-center">
+                        <div class="dental-content-area">
+                            <div class="common-title padding-bottom-30">
+                                <h2 class="heading line-left">EX500 StramLight<span
+                                        style="vertical-align: super; font-size:12px;">TM</span></h2>
+                            </div>
+                            <div class="check-box-area">
+                                <ul class="check-box">
+                                    <li>∙ Eye tracking speed of 1050Hz, 500Hz laser delivery</li>
+                                    <li>∙ Widest FDA-approved range (Myopia up to -12, Astigmatism up to -6 diopters)
+                                    </li>
+                                    <li>∙ Laser with minimal corneal tissue removal: optimized for correcting high
+                                        myopia and astigmatism </li>
+                                    <li>∙ Wide laser optic zone to reduce light scatter</li>
+                                    <li>∙ Minimizes corneal opacity and dry eye by reducing the amount of tissue removed
+                                    </li>
+                                    <li>∙ Excellent for enhancement surgery of decentration and myopic regression </li>
+                                    <li>∙ Integration with vario/oculyzer: Topography-guided ablation (T-CAT) </li>
+                                    <li>∙ The highest level of eye-tracking function</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!--Main Area End Here-->
+
+   <th:block th:replace="fragments/en/common :: enFooter"></th:block>
+</body>
+
+</html>

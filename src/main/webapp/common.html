@@ -1,0 +1,2224 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="jpHeadMenu">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>スヨンセ眼科</title>
+
+    <link rel="icon" href="favicon.png" sizes="20x20" type="image/png">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/rpopup.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/jquery.rprogessbar.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/detail.css">
+    <script src="https://kit.fontawesome.com/e5334cc6a1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="preloader" id="preloader" th:fragment="jpPreloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header-area">
+                    <div class="logo-area">
+                        <a href="#">
+                            <img src="assets/img/logo.png" alt="Nav Logo">
+                        </a>
+                    </div>
+                    <nav class="navbar navbar-area navbar-expand-lg sticky-navbar">
+                        <div class="container nav-container">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#fortis_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="cross-menu">
+                                    <span class="bar1"></span>
+                                    <span class="bar2"></span>
+                                    <span class="bar3"></span>
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="fortis_main_menu">
+                                <ul class="navbar-nav">
+                                    <li>
+                                        <a class="home active" href="#home">Home</a>
+                                    </li>
+                                    <li>
+                                        <a class="why" href="#why">Why スヨンセ？</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a class="equipment" href="#equipment">Equipments
+                                            <ul class="sub-menu">
+                                                <li><a class="move-page" href="equipments.html"># Equipments Center</a>
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a class="center" href="#center">視力矯正手術センター
+                                            <ul class="sub-menu">
+                                                <li><a class="move-page" href="smile.html"># スマイルレーシック</a></li>
+                                                <li><a class="move-page" href="keratoconus.html"># 円錐角膜</a></li>
+                                                <li><a class="move-page" href="lens.html"># 眼内レンズ挿入術</a></li>
+                                                <li><a class="move-page" href="lasek.html"># ラセック</a></li>
+                                                <li><a class="move-page" href="lasik.html"># レーシック</a></li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="doctor" href="#doctor">医療スタッフ紹介</a>
+                                    </li>
+                                    <li>
+                                        <a class="comment" href="#comment">体験談</a>
+                                    </li>
+                                    <li><a class="contact" href="#contact">お問い合わせ</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="home-slider home-slider-one" id="home">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="scroll-down-area">
+                        <div class="carousel-dots-area"></div>
+                        <div class="slider-bottom-area">
+                            <div class="scroll-down">
+                                <a href="#why">サイトマップ</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-slider-wrapper">
+                        <div class="slider-items">
+                            <div class="slider-content-area">
+                                <div class="slider-content">
+                                    <h1 class="slider-heading">医療スタッフの丁寧な診療
+                                    </h1>
+                                    <div class="padding-30">
+                                        <p>目の状態に最も適した手術を行うため、スヨンセでは詳細な検査をもとに専門医療スタッフが
+                                            精密にチェックし、最適な手術方法を決定しています。これにより、患者さんの目の健康に最適な手術方法で行います。
+                                        </p>
+                                    </div>
+                                    <div class="main-btn-wrap">
+                                        <a href="#equipment" class="main-btn">詳細を見る</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-img" style="background-image: url(assets/img/japan/main01.png)">
+                            </div>
+                        </div>
+                        <div class="slider-items">
+                            <div class="slider-content-area">
+                                <div class="slider-content">
+                                    <h1 class="slider-heading">科学技術と医学の融合</h1>
+                                    <div class="padding-30">
+                                        <p>最先端の手術装備で最高の視力矯正を行うことはもちろん、手術前の過程から手術後のアフターケアまで
+                                            患者さんに明るく繊細な視力をお届けします。 また、研究所を通じた研究と治療を並行して行う研究員の専門性が最高の結果を約束します。
+                                        </p>
+                                    </div>
+                                    <div class="main-btn-wrap">
+                                        <a href="equipments.html" class="main-btn">詳細を見る</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-img" style="background-image: url(assets/img/japan/main02.png)">
+                            </div>
+                        </div>
+                        <!--slider item-->
+                        <div class="slider-items">
+                            <div class="slider-content-area">
+                                <div class="slider-content">
+                                    <h1 class="slider-heading">数十年の経験とノウハウを持つ医療スタッフ</h1>
+                                    <div class="padding-30">
+                                        <p>スヨンセ眼科の7人の医療陣は、数十年の経験と最高の手術技術はもちろん、定期的な研究を通して常に
+                                            患者さんの目の健康を考えながら手術を行います。 また、外科的治療だけでなく、治療が必要かどうか、どのような治療が必要か、そしていつ
+                                            必要かどうかのすべての過程を一緒に共有し、共感し、明確な方向性を提示します。
+                                        </p>
+                                    </div>
+                                    <div class="main-btn-wrap">
+                                        <a href="#doctor" class="main-btn">詳細を見る</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-img" style="background-image: url(assets/img/japan/main03.png)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-icon">
+                        <a class="icon" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="icon" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="icon" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why" class="service padding-100">
+            <div class="container-fluid px-0">
+                <!-- Side form icons -->
+                <div id="service_info_item" class="side-form-icons">
+                    <i class="icon flaticon-phone-call" id="open-opening-popup"></i>
+                    <i class="icon flaticon-placeholder" id="open-location-popup"></i>
+                    <i class="icon flaticon-clock-circular-outline" id="open-form-popup"></i>
+                </div>
+                <div class="container-fluid why-wrap">
+                    <div class="row mx-0">
+                        <!--Service Left Column-->
+                        <div class="col-lg-4 col-md-12">
+                            <div class="service-left">
+                                <h3 class="heading-3">Why スヨンセ眼科？</h3>
+                                <div class="padding-bottom-35 padding-top-30">
+                                    <p>スヨンセ眼科のすべての医療陣は、当院の円錐角膜研究所を通じた研究と治療を並行して行っています。 また、眼内レンズ挿入術のオプテックスのReference
+                                        Doctor資格で、手術症例と手術法の研究開発において世界各地の医療スタッフを教育、円錐角膜患者治療後、眼内レンズ挿入術に対する
+                                        研究も並行して行っています。</p>
+                                    <p class="mt-3">外科的治療だけでなく、治療の必要性、どのような治療が必要なのか、そしていつ必要なのかという全ての過程を一緒に
+                                        共有・共感し、明確な
+                                        方向性を提示する <strong>スヨンセ眼科</strong>です。</p>
+                                </div>
+                                <div class="main-btn-wrap">
+                                    <a href="#contact" class="main-btn">お問合せ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Service Left Column End-->
+
+                        <!--Service Right Column-->
+                        <div class="col-lg-8 col-md-12">
+                            <div class="service-right">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="right-column-one">
+                                            <div class="service-item">
+                                                <img src="assets/img/icon/1.png" alt="img">
+                                                <h6 class="heading-6">最新バージョンのレーザー機器を保有</h6>
+                                                <p>ノウハウと経験で培った専門性を実現してくれる先端レーザー機器を保有しています。</p>
+                                            </div>
+                                            <div class="service-item">
+                                                <img src="assets/img/icon/2.png" alt="img">
+                                                <h6 class="heading-6">執刀医の直接検眼</h6>
+                                                <p>手術前の検査から専門医が直接検眼し、患者様の目に最適化された手術方法で行われます。</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="right-column-two">
+                                            <div class="service-item">
+                                                <img src="assets/img/icon/3.png" alt="img">
+                                                <h6 class="heading-6">副作用専門治療</h6>
+                                                <p>手術はもちろん、手術後の完全な回復まで副作用を最小限に抑える専門的な治療を行っています。</p>
+                                            </div>
+                                            <div class="service-item">
+                                                <img src="assets/img/icon/4.png" alt="img">
+                                                <h6 class="heading-6">医療スタッフ間の協力</h6>
+                                                <p>様々な分野の専門家のコラボレーションにより、どんな状況にも最適化された治療が可能です。</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="right-column-three">
+
+                                            <div class="service-item">
+                                                <img src="assets/img/icon/5.png" alt="img">
+                                                <h6 class="heading-6 mb-0">すべての手術が可能な</h6>
+                                                <h6 class="heading-6 mt-0">7人の医療スタッフ</h6>
+                                                <p>世界各地の医療スタッフを教育するほど優れた能力を持つ専門医療スタッフが直接すべての診療を行います。</p>
+                                            </div>
+                                            <div class="service-item">
+                                                <img src="assets/img/icon/6.png" alt="img">
+                                                <h6 class="heading-6 mb-0">円錐角膜などの難治性</h6>
+                                                <h6 class="heading-6 mt-0">疾患までケア可能</h6>
+                                                <p>自社研究所で行う研究開発により、どんな難治性疾患も完璧にケアすることができます。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Service Right Column End-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Service Section End Here-->
+
+        <!--Pricing Section Start Here-->
+        <section class="timeline-section padding-100" id="equipment">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="common-title padding-bottom-50 equipment-title">
+                            <h2 class="heading line-left m-auto">スヨンセのEquipment</h2>
+                            <h5 class="heading-6 heading-subtitle">- スヨンセ眼科の高い専門性を実現させてくれる3つの先端レーザー機器 - </h5>
+                        </div>
+                    </div>
+                    <div class="container-fluid equipment-wrap mt-5">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="blog-post-single-item">
+                                    <div class="thumb">
+                                        <a href="equipments.html"><img src="assets/img/equipment/1.png"></a>
+                                    </div>
+                                    <div class="content equipment-info">
+
+                                        <h3 class="title padding-top-10">
+                                            <a href="equipments.html">次世代視力矯正術 [TFC SMILE]</a>
+                                        </h3>
+                                        <p class="padding-top-5 padding-bottom-15">VisuMax</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="blog-post-single-item">
+                                    <div class="thumb">
+                                        <a href="equipments.html"><img src="assets/img/equipment/2.png"></a>
+                                    </div>
+                                    <div class="content equipment-info">
+
+                                        <h3 class="title padding-top-10">
+                                            <a href="equipments.html">エキシマレーザー技術の結晶 ドイツ シュヴィントアマリスの最高級機種</a>
+                                        </h3>
+                                        <p class="padding-top-5 padding-bottom-15">Amaris RED Smart Surf<span
+                                                style="font-size:12px;vertical-align:super;"> ACE</span></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="blog-post-single-item">
+                                    <div class="thumb">
+                                        <a href="equipments.html"><img src="assets/img/equipment/3.png"></a>
+                                    </div>
+                                    <div class="content equipment-info">
+
+                                        <h3 class="title padding-top-10">
+                                            <a href="equipments.html">超高度近視矯正の絶対王者EX500の最上位バージョン</a>
+                                        </h3>
+                                        <p class="padding-top-5 padding-bottom-15">EX500 StreamLight<span
+                                                style="vertical-align:super; font-size:12px;">TM</span></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="about-our-doctor our-doctor padding-100" id="center">
+            <div class="container-fluid px-0">
+                <div class="container px-0">
+                    <div class="row">
+                        <!--Common Title-->
+                        <div class="col-lg-9">
+                            <div class="common-title padding-bottom-40">
+                                <h2 class="heading">スヨンセの視力矯正手術センター</h2>
+                            </div>
+                        </div>
+                        <div class="col-12 about-doctor px-lg-0">
+                            <div id="aboutPageDoctorIndicators" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="col-lg-5 col-md-12">
+                                            <div class="slider-content">
+                                                <h4 class="heading-04">スマイルレーシック(SMILE)</h4>
+                                                <h6 class="heading-06">SMall Incision Lenticule Extraction</h6>
+
+                                                <p>みんな同じスマイルではありません。</p>
+                                                <p><strong>涙膜をコントロールするスマイル、TFCスマイル。</strong></p>
+                                                <p>涙膜を最適な状態にすることで、スマイルの結果を大幅に向上させた手術方法で
+                                                    スヨンセ眼科医療陣が5年の研究を経て初めて開発し
+                                                    2018年海外学会発表及びSCI論文であるGraefe's Archiveに掲載されました。
+                                                </p>
+                                                <!-- Accordion Wrapper Start Here -->
+                                                <div class="accordion-wrapper">
+                                                    <div id="accordion">
+                                                        <div class="card">
+                                                            <div class="card-header" id="headingOne">
+                                                                <h5 class="mb-0">
+                                                                    <a role="button" data-toggle="collapse"
+                                                                        data-target="#collapseOne" aria-expanded="true"
+                                                                        aria-controls="collapseOne">
+                                                                        Special Advantages
+                                                                    </a>
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapseOne" class="collapse show"
+                                                                aria-labelledby="headingOne" data-parent="#accordion">
+                                                                <div class="card-body">
+                                                                    <p># 高い手術結果予測率</p>
+                                                                    <p># ぼんやりした症状期間の最小化と予防</p>
+                                                                    <p># 低エネルギー、高エネルギーそれぞれのメリットを最大化</p>
+                                                                    <p># より低い近視の退行確率</p>
+                                                                    <p># 中心ずれ抑制、より正確な乱視矯正</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="main-btn-wrap">
+                                                    <a href="smile.html" class="main-btn">詳細を見る</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-lg-7 col-md-12 slider-img px-0"
+                                            style="background-image: url(assets/img/japan/smile.png)">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-lg-5 col-md-12">
+                                            <div class="slider-content">
+                                                <h4 class="heading-04">眼内レンズ挿入術</h4>
+                                                <h6 class="heading-06">Phakic Intraocular Lens implantation</h6>
+
+                                                <p><strong>角膜が薄すぎる場合、形状が悪い場合、屈折異常がひどく角膜を削る手術が負担になる場合、レーザー
+                                                        手術の良い代替手段となる手術方法です。</strong></p>
+                                                <p>角膜を切除せず、眼球の構造をそのまま保存できるため、最も生理学的な手術と言えますし、夜間視機能も優れた
+                                                    　手術です。
+                                                </p>
+                                                <p>近視の退行がほとんどなく、一度の手術で良い視力を生涯維持するための最善の方法として、挿入される位置によって前方レンズと
+                                                    後方レンズに分かれています。
+                                                </p>
+                                                <!-- Accordion Wrapper Start Here -->
+                                                <div class="accordion-wrapper">
+                                                    <div id="accordion">
+                                                        <div class="card">
+                                                            <div class="card-header" id="headingTwo">
+                                                                <h5 class="mb-0">
+                                                                    <a role="button" data-toggle="collapse"
+                                                                        data-target="#collapseTwo" aria-expanded="true"
+                                                                        aria-controls="collapseTwo">
+                                                                        Special Advantages
+                                                                    </a>
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapseTwo" class="collapse show"
+                                                                aria-labelledby="headingTwo" data-parent="#accordion">
+                                                                <div class="card-body">
+                                                                    <p># 視力矯正専門医にレンズ挿入術を教える医療スタッフ</p>
+                                                                    <p># 現存するあらゆる種類の眼内レンズ挿入術を熟練した技術で丁寧に</p>
+                                                                    <p># 目に合ったレンズの推薦におけるバランスの取れた感覚</p>
+                                                                    <p># 手術前検眼、虹彩形成術、術後管理は1人の執刀医が担当</p>
+                                                                    <p># あらゆる種類の合併症の治療が可能</p>
+                                                                    <p># 手術後の継続的なモニタリング: 内皮細胞、水晶体、網膜のチェック</p>
+                                                                    <p># 眼内レンズ最上位認証機関</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="main-btn-wrap">
+                                                    <a href="lens.html" class="main-btn">詳細を見る</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-12 slider-img px-0"
+                                            style="background-image: url(assets/img/japan/lens.png)">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-lg-5 col-md-12">
+                                            <div class="slider-content">
+                                                <h4 class="heading-04">円錐角膜</h4>
+                                                <h6 class="heading-06">Keratoconus</h6>
+
+                                                <p><strong>円錐角膜（keratoconus）/
+                                                        角膜拡張症（keratectasia）というのは、角膜の一部が元の緩やかな丸みを帯びた丸い
+                                                        形を保てず、前方に突出して出てくる進行性疾患を意味します。</strong></p>
+                                                <p>当院は全国のすべての大学病院を含む基準で円錐角膜 / 角膜拡張症の治療手術症例1位の専門病院です。 他病院と
+                                                    比較すると、少なくても数倍から多くても数百倍の手術経験を持っており、数千人の円錐角膜/角膜拡張症
+                                                    患者さんの経過を見ながら新しい治療法を研究し、その結果を学会に発表しています。
+                                                </p>
+                                                <p>当院は2009年にすでに国内初、アジア初となる「ケラリングロード(the Lord of Keraring)」を受賞。 2011年に
+                                                    は韓国初、アジア初の「インタックスマスター(Master of Intacs)」を受賞しており2016年には
+                                                    リング挿入術治療症例数世界1位であることが認められました。 これは、当院の専門性が世界最高峰であることを改めて
+                                                    認められたのだと思います。
+                                                </p>
+                                                <!-- Accordion Wrapper Start Here -->
+                                                <div class="accordion-wrapper">
+                                                    <div id="accordion">
+                                                        <div class="card">
+                                                            <div class="card-header" id="headingThree">
+                                                                <h5 class="mb-0">
+                                                                    <a role="button" data-toggle="collapse"
+                                                                        data-target="#collapseThree"
+                                                                        aria-expanded="true"
+                                                                        aria-controls="collapseThree">
+                                                                        Special Advantages
+                                                                    </a>
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapseThree" class="collapse show"
+                                                                aria-labelledby="headingThree" data-parent="#accordion">
+                                                                <div class="card-body">
+                                                                    <p># 韓国1位角膜交差結合術</p>
+                                                                    <p># 円錐角膜遺伝子研究（Jules Stein Eye Institute &
+                                                                        Avellino Lab 強力）</p>
+                                                                    <p># 継続的な講義、発表（ESCRS、AAO、大韓眼科学会、コンタクトレンズ研究会）</p>
+                                                                    <p># 円錐角膜の正確な診断から治療、視力回復まで段階的な診療</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="main-btn-wrap">
+                                                    <a href="keratoconus.html" class="main-btn">詳細を見る</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-12 slider-img px-0"
+                                            style="background-image: url(assets/img/japan/won.png)">
+                                        </div>
+                                    </div>
+                                    <!--// Carousel Item one-->
+
+                                    <div class="carousel-item">
+                                        <div class="col-lg-5 col-md-12">
+                                            <div class="slider-content">
+                                                <h4 class="heading-04">ラセック</h4>
+                                                <h6 class="heading-06">LASEK</h6>
+
+                                                <p><strong>角膜の最も前面にある上皮だけを分離した後、レーザーを照射して近視乱視を矯正する手術方法</strong>
+                                                </p>
+                                                <p>3-4日の痛み、回復が遅いのが欠点ですが、レーザー視力矯正手術の中で最も少ない範囲で行われる保守的な手術で、角膜が薄く
+                                                    厚いメガネをかける方に優先的に検討される手術です。
+                                                </p>
+                                                <p>手術過程はもちろん、手術後の視力を完成させていく過程がより重要なレーシック、スヨンセ執刀医が手術前の検査から生涯のアフターケアまで
+                                                    行います。
+                                                </p>
+                                                <!-- Accordion Wrapper Start Here -->
+                                                <div class="accordion-wrapper">
+                                                    <div id="accordion">
+                                                        <div class="card">
+                                                            <div class="card-header" id="headingOne">
+                                                                <h5 class="mb-0">
+                                                                    <a role="button" data-toggle="collapse"
+                                                                        data-target="#collapseOne" aria-expanded="true"
+                                                                        aria-controls="collapseOne">
+                                                                        Special Advantages
+                                                                    </a>
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapseOne" class="collapse show"
+                                                                aria-labelledby="headingOne" data-parent="#accordion">
+                                                                <div class="card-body">
+                                                                    <p><strong># プレミアムカスタムSラセック</strong></p>
+                                                                    <p>=>
+                                                                        Schwind社の最新バージョン、最新スペックのアマリスREDスマートパルステクノロジーを利用した
+                                                                        ラセック</p>
+                                                                    <p><strong># プレミアムカスタムQラセック</strong></p>
+                                                                    <p>=> Alcon社の最新バージョン、最新スペックのEX500を用いたラセック</p>
+                                                                    <p><strong># エキストララセック（LASEK with CXL）</strong></p>
+                                                                    <p>=> CXLは角膜コラーゲン架橋術の略称で、角膜が薄い、または超近視・乱視、遠視
+                                                                        矯正時に適用し、レーシックで屈折異常を矯正した後、コラーゲン架橋術を行い、角膜の
+                                                                        安定性を高める手術方法</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="main-btn-wrap">
+                                                    <a href="lasek.html" class="main-btn">詳細を見る</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-12 slider-img px-0"
+                                            style="background-image: url(assets/img/japan/lasek.png)">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-lg-5 col-md-12">
+                                            <div class="slider-content">
+                                                <h4 class="heading-04">レーシック</h4>
+                                                <h6 class="heading-06">LASIK</h6>
+
+                                                <p><strong>レーザーを用いて上皮と一部の実質を含む切片を作り開けた後、
+                                                        角膜実質にレーザーを照射して矯正し、再び角膜切片を覆う手術方法です。
+                                                    </strong></p>
+                                                <p>3-4時間の異物感・違和感の後、1日で日常生活への復帰が可能で、手術翌日の視力が最も優れた爽やかな手術です
+                                                </p>
+                                                <p>Sirius、Vario、Oculyzerなどの診断機器のリンクで、3つの機器の適切な組み合わせで
+                                                    メガネ最大矯正視力以上の裸眼視力を目指します。
+
+                                                </p>
+                                                <div class="accordion-wrapper">
+                                                    <div id="accordion">
+                                                        <div class="card">
+                                                            <div class="card-header" id="headingOne">
+                                                                <h5 class="mb-0">
+                                                                    <a role="button" data-toggle="collapse"
+                                                                        data-target="#collapseOne" aria-expanded="true"
+                                                                        aria-controls="collapseOne">
+                                                                        Special Advantages
+                                                                    </a>
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapseOne" class="collapse show"
+                                                                aria-labelledby="headingOne" data-parent="#accordion">
+                                                                <div class="card-body">
+                                                                    <p><strong># プレミアムカスタムSビジュレーシック</strong></p>
+                                                                    <p>=>
+                                                                        Schwind社の最新バージョン、最新スペックのアマリスREDスマートパルステクノロジーを利用した
+                                                                        レーシック</p>
+                                                                    <p><strong># プレミアムカスタムQビジュレーシック</strong></p>
+                                                                    <p>=> Alcon社の最新バージョン、最新スペックのEX500を用いたレーシック</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="main-btn-wrap">
+                                                    <a href="lasik.html" class="main-btn">詳細を見る</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-12 slider-img px-0"
+                                            style="background-image: url(assets/img/japan/lasik.png)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#aboutPageDoctorIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"> <i class="fas fa-chevron-left"></i>
+                    </span>
+                </a>
+                <a class="carousel-control-next" href="#aboutPageDoctorIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"> <i class="fas fa-chevron-right"></i>
+                    </span>
+                </a>
+            </div>
+        </section>
+        <!--// Doctor Section End Here-->
+
+        <!--Statistics Section Start Here-->
+        <section class="our-doctor padding-top-25 padding-bottom-100 margin-bottom-30" id="doctor">
+            <div class="container-fluid">
+                <div class="row">
+                    <!--Common Title-->
+                    <div class="col-lg-12">
+                        <div class="common-title padding-bottom-50">
+                            <h2 class="heading">スヨンセの専門医療スタッフ</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 doctor-slider" style="margin:0 auto;">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <div class="doctor-slider-img">
+                                                <img src="assets/img/member/1.png" class="d-block w-100"
+                                                    alt="Slider Img">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <span class="doctor-slider-content">
+                                                <h4 class="heading-4">キムインシック院長</h4>
+                                                <h6 class="heading-6">KIM INSIK, M.D</h6>
+                                            </span>
+                                            <div class="mission-tab-area padding-top-60">
+                                                <!-- <div class="col-lg-6 col-md-12"> -->
+                                                <div class="tab-navbar-area">
+                                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" id="home-tab" data-toggle="tab"
+                                                                href="#oneOne" role="tab" aria-controls="home"
+                                                                aria-selected="true"># 略歴 [Profile]</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="profile-tab" data-toggle="tab"
+                                                                href="#oneTwo" role="tab" aria-controls="profile"
+                                                                aria-selected="false"># 受賞歴 [Winning a Prize]</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="contact-tab" data-toggle="tab"
+                                                                href="#oneThree" role="tab" aria-controls="contact"
+                                                                aria-selected="false"># 論文及び学会発表 [Writing and
+                                                                Conference]</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-content-area">
+                                                    <div class="tab-content" id="myTabContent">
+                                                        <div class="tab-pane fade show active" id="oneOne"
+                                                            role="tabpanel" aria-labelledby="home-tab">
+                                                            <div class="tab-content row">
+                                                                <div class="col-lg-6 col-md-6">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - 延世大学医学部卒業
+                                                                            </p>
+                                                                            <p>
+                                                                                - セブランス病院インターン・研修医修了
+                                                                            </p>
+                                                                            <p>
+                                                                                - 延世大学大学院修士課程修了
+                                                                            </p>
+                                                                            <p>
+                                                                                - セブランス病院眼科専門医
+                                                                            </p>
+                                                                            <p>
+                                                                                - 延世大学校新村セブランス病院眼科臨床講師
+                                                                            </p>
+                                                                            <p>
+                                                                                - アメリカ白内障屈折矯正手術学会(ASCRS) 正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - 韓国白内障屈折手術学会（KSCRS）正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - 延世大学医学部 客員教授
+                                                                            </p>
+                                                                            <p>
+                                                                                - オランダ オプテック社
+                                                                                アルティサン/アルティフレックスレンズ挿入術専門課程研修
+                                                                            </p>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - ドイツWavelight社EX500ウェーブフロントコース
+                                                                                ラセック/レーシック過程
+                                                                                研修
+                                                                            </p>
+                                                                            <p>
+                                                                                - アメリカSTAAR社Visian ICLレンズ挿入術専門課程研修
+                                                                            </p>
+                                                                            <p>
+                                                                                - 老眼矯正白内障手術専門課程研修
+                                                                            </p>
+                                                                            <p>
+                                                                                - 大韓眼科学会正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - ブピョン聖母眼科院長
+                                                                            </p>
+                                                                            <p>
+                                                                                - 白内障及び老眼手術5,000件以上執刀
+                                                                            </p>
+                                                                            <p>
+                                                                                -
+                                                                                インタックス(Intacs)、ケラリング(Keraring)角膜内リング挿入術
+                                                                                専門課程研修
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="oneTwo" role="tabpanel"
+                                                            aria-labelledby="profile-tab">
+                                                            <div class="tab-content">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - ICL™ / TICL™ GLOBAL Expert Surgeon
+                                                                            </p>
+                                                                            <p>
+                                                                                - オプテック社 アルティサン/アルティフレックス Best Skilled
+                                                                                User
+                                                                            </p>
+                                                                            <p>
+                                                                                - Ophtec World’s Great Surgeon
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="oneThree" role="tabpanel"
+                                                            aria-labelledby="contact-tab">
+                                                            <div class="tab-content">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - Changes in exodeviation following
+                                                                                hyperopic correction in patients with
+                                                                                intermittent exotropia
+                                                                            </p>
+                                                                            <p>
+                                                                                (J Pediatr Ophthalmol Strabismus. 2011
+                                                                                Sep-Oct;48(5):278-84)
+                                                                            </p>
+                                                                            <p>
+                                                                                - Three cases of Descemet's membrane
+                                                                                detachment after cataract surgery.
+                                                                            </p>
+                                                                            <p>
+                                                                                (Yonsei Med J. 2005 Oct
+                                                                                31;46(5):719-23.) 외 8편
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <div class="doctor-slider-img">
+                                                <img src="assets/img/member/2.png" class="d-block w-100"
+                                                    alt="Slider Img">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <span class="doctor-slider-content">
+                                                <h4 class="heading-4">パクソンベ院長</h4>
+                                                <h6 class="heading-6">PARK SEONG BAE, M.D</h6>
+                                            </span>
+                                            <div class="mission-tab-area padding-top-60">
+                                                <!-- <div class="col-lg-6 col-md-12"> -->
+                                                <div class="tab-navbar-area">
+                                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" id="home-tab" data-toggle="tab"
+                                                                href="#twoOne" role="tab" aria-controls="home"
+                                                                aria-selected="true"># 略歴 [Profile]</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="profile-tab" data-toggle="tab"
+                                                                href="#twoTwo" role="tab" aria-controls="profile"
+                                                                aria-selected="false"># 論文発表 [Writing]</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="contact-tab" data-toggle="tab"
+                                                                href="#twoThree" role="tab" aria-controls="contact"
+                                                                aria-selected="false"># 学会発表 [Conference]</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-content-area">
+                                                    <div class="tab-content" id="myTabContent">
+                                                        <div class="tab-pane fade show active" id="twoOne"
+                                                            role="tabpanel" aria-labelledby="home-tab">
+                                                            <div class="tab-content row">
+                                                                <div class="col-lg-6 col-md-6">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - 延世大学医学部卒業
+                                                                            </p>
+                                                                            <p>
+                                                                                - 延世大学セブランス病院 眼科専門医
+                                                                            </p>
+                                                                            <p>
+                                                                                - ソウルアサン病院眼科専任医（緑内障分野）
+                                                                            </p>
+                                                                            <p>
+                                                                                - チャ(CHA)医科大学 ブンダンチャ病院 眼科教授
+                                                                            </p>
+                                                                            <p>
+                                                                                - 韓国緑内障学会 正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - 大韓眼科医会 副会長
+                                                                            </p>
+                                                                            <p>
+                                                                                - 白内障屈折学会 教育理事
+                                                                            </p>
+                                                                            <p>
+                                                                                - 韓国白内障屈折手術学会（KSCRS）正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - アメリカ眼科学会（AAO）正会員
+                                                                            </p>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - アメリカ視機能学会（ARVO）正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - ヨーロッパ緑内障学会(EGS) 正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - SEAGIG （South East Asia Glaucoma
+                                                                                Interest Group） 正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - Thomas Jefferson Medical School 研修
+                                                                            </p>
+                                                                            <p>
+                                                                                - Will’s Eye Hospital 研修
+                                                                            </p>
+                                                                            <p>
+                                                                                - 日本岐阜県立医科大学 研修
+                                                                            </p>
+                                                                            <p>
+                                                                                - 日本東邦大学医学部 研修
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="twoTwo" role="tabpanel"
+                                                            aria-labelledby="profile-tab">
+                                                            <div class="tab-content">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - Assessment of narrow angles by
+                                                                                gonioscopy, Van Herick method and
+                                                                                anterio
+                                                                                Segment optical coherence tomography
+                                                                                Japanese Journal of Ophthalmology.2011
+                                                                            </p>
+                                                                            <p>
+                                                                                - Hydrophillic acrylic Intraocular lens
+                                                                                optic opacification in a diabetic
+                                                                                patient Japanese
+                                                                                Journal of Ophthalmology.2011 등 21편 발표
+
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="twoThree" role="tabpanel"
+                                                            aria-labelledby="contact-tab">
+                                                            <div class="tab-content">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+
+                                                                            <p>
+                                                                                - Comparison of Intraocular
+                                                                                Pressure(IOP) Changes after Intravitreal
+                                                                                Triamcinolone
+                                                                                Acetonide versus Bevacizumab Injection
+
+                                                                            </p>
+                                                                            <p>
+                                                                                - 2010 European glaucoma society annual
+                                                                                meeting (Madrid) など9編発表
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <div class="doctor-slider-img">
+                                                <img src="assets/img/member/3.png" class="d-block w-100"
+                                                    alt="Slider Img">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <span class="doctor-slider-content">
+                                                <h4 class="heading-4">ヤンフン院長</h4>
+                                                <h6 class="heading-6">YANG HUN, M.D</h6>
+                                            </span>
+                                            <div class="mission-tab-area padding-top-60">
+                                                <!-- <div class="col-lg-6 col-md-12"> -->
+                                                <div class="tab-navbar-area">
+                                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" id="home-tab" data-toggle="tab"
+                                                                href="#threeOne" role="tab" aria-controls="home"
+                                                                aria-selected="true"># 略歴 [Profile]</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="profile-tab" data-toggle="tab"
+                                                                href="#threeTwo" role="tab" aria-controls="profile"
+                                                                aria-selected="false"># 受賞歴 [Winning a Prize]</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="contact-tab" data-toggle="tab"
+                                                                href="#threeThree" role="tab" aria-controls="contact"
+                                                                aria-selected="false"># 著書及び学会発表 [Writing and
+                                                                Conference]</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-content-area">
+                                                    <div class="tab-content" id="myTabContent">
+                                                        <div class="tab-pane fade show active" id="threeOne"
+                                                            role="tabpanel" aria-labelledby="home-tab">
+                                                            <div class="tab-content row">
+                                                                <div class="col-lg-6 col-md-6">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - 延世大学医学部 卒業
+                                                                            </p>
+                                                                            <p>
+                                                                                - 延世大学セブランス病院 眼科専門医
+                                                                            </p>
+                                                                            <p>
+                                                                                - 欧州白内障屈折矯正手術学会（ESCRS） 正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - アメリカ白内障屈折矯正手術学会（ASCRS）正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - 韓国白内障屈折手術学会（KSCRS）正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - 韓国コンタクトレンズ研究会（KCLS）正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - Jerry Tan Eye Surgery (Wavelight
+                                                                                Ambassador in Singapore) 研修
+                                                                            </p>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - 江南明るい世界眼科プレミアム院長歴任
+                                                                            </p>
+                                                                            <p>
+                                                                                （レーザー視力矯正12800ケース、眼内レンズ1070ケースを手術、
+                                                                                合併症クリニック専門）
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="threeTwo" role="tabpanel"
+                                                            aria-labelledby="profile-tab">
+                                                            <div class="tab-content">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - ICL™ / TICL™ GLOBAL Expert Surgeon
+                                                                                (2012)
+                                                                            </p>
+                                                                            <p>
+                                                                                - Artisan Best Skilled User (2012)
+                                                                            </p>
+                                                                            <p>
+                                                                                - Artiflex Best Skilled User (2012)
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="threeThree" role="tabpanel"
+                                                            aria-labelledby="contact-tab">
+                                                            <div class="tab-content">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - Higher-order aberration changes after
+                                                                                Implantable Collamer Lens implantation
+                                                                                for myopia.
+                                                                            </p>
+                                                                            <p>
+                                                                                (Am J Ophthalmol. 2011
+                                                                                Apr;151(4):653-662)
+                                                                            </p>
+                                                                            <p>
+                                                                                - Clinical Outcomes and Practice
+                                                                                Efficiencies with Allegretto Wave Eye-Q
+                                                                                (2010.Alcon ACT Koreaで講演)
+                                                                            </p>
+                                                                            <p>
+                                                                                - 11個の症例から見た視力矯正手術前検査（2010.
+                                                                                第106回 大韓眼科学会 Instruction Course 講演）
+                                                                            </p>
+                                                                            <p>
+                                                                                - 目の構造と生理-コンタクトレンズの基礎（2010-2011. シアンドビ
+                                                                                assistantのためのセミナー講演）
+                                                                            </p>
+                                                                            <p>
+                                                                                - Customized treatment with Wavelight
+                                                                                laser platform (2011. APACRS wavelight
+                                                                                user meeting 英語講演)
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <div class="doctor-slider-img">
+                                                <img src="assets/img/member/4.png" class="d-block w-100"
+                                                    alt="Slider Img">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <span class="doctor-slider-content">
+                                                <h4 class="heading-4">コイルファン院長</h4>
+                                                <h6 class="heading-6">KOH IL HWAN, M.D</h6>
+                                            </span>
+                                            <div class="mission-tab-area padding-top-60">
+                                                <!-- <div class="col-lg-6 col-md-12"> -->
+                                                <div class="tab-navbar-area">
+                                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" id="home-tab" data-toggle="tab"
+                                                                href="#fourOne" role="tab" aria-controls="home"
+                                                                aria-selected="true"># 略歴 [Profile]</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="profile-tab" data-toggle="tab"
+                                                                href="#fourTwo" role="tab" aria-controls="profile"
+                                                                aria-selected="false"># 受賞歴 [Winning a Prize]</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="contact-tab" data-toggle="tab"
+                                                                href="#fourThree" role="tab" aria-controls="contact"
+                                                                aria-selected="false"># 論文及び学会発表 [Writing and
+                                                                Conference]</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-content-area">
+                                                    <div class="tab-content" id="myTabContent">
+                                                        <div class="tab-pane fade show active" id="fourOne"
+                                                            role="tabpanel" aria-labelledby="home-tab">
+                                                            <div class="tab-content row">
+                                                                <div class="col-lg-6 col-md-6">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - 延世大学医学部卒業、セブランス病院眼科専門医
+                                                                            </p>
+                                                                            <p>
+                                                                                - カトリック医科大学ソウル聖母病院眼科外来教授
+                                                                            </p>
+                                                                            <p>
+                                                                                - 延世大学医学部セブランス病院 眼科外来助教授
+                                                                            </p>
+                                                                            <p>
+                                                                                - アメリカ白内障屈折矯正手術学会（ASCRS）正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - Avellino社円錐角膜遺伝子研究臨床諮問医
+                                                                            </p>
+                                                                            <p>
+                                                                                - 角膜交差結合術 欧州AJO社 臨床諮問医
+                                                                            </p>
+                                                                            <p>
+                                                                                - 円錐角膜インタックスマスター（Master of
+                                                                                Intacs）及びケラーリングの
+                                                                                神（Lord of Keraring）認証医
+                                                                            </p>
+                                                                            <p>
+                                                                                - ドイツ カールツァイス VisuMax ICRS レファレンスドクター
+                                                                            </p>
+                                                                            <p>
+                                                                                - OPHTEC社認証 アルティフレックス／アルティサン レファレンスドクター
+                                                                            </p>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - 角膜交差結合術 アメリカAvedro社 Clnical Medical
+                                                                                Advisor
+                                                                            </p>
+                                                                            <p>
+                                                                                - 韓国最多の円錐角膜治療症例 (リング手術／角膜交差結合術／　
+                                                                                角膜地形切削）保有
+                                                                            </p>
+                                                                            <p>
+                                                                                - アジア最多の円錐角膜角膜内リング手術症例 保有
+                                                                            </p>
+                                                                            <p>
+                                                                                - 国内初・最多の円錐角膜 2 step 및 3 step 併用治療
+                                                                                症例保有
+                                                                            </p>
+                                                                            <p>
+                                                                                - Amaris Red（1050 Rs）とEX500の角膜地形切削
+                                                                                韓国最多治療症例 保有
+                                                                            </p>
+                                                                            <p>
+                                                                                - 国内最初及び最多の円錐角膜治療後の眼内レンズ挿入術治療症例を保有
+                                                                            </p>
+                                                                            <p>
+                                                                                - 国内初のラセック+角膜交差結（ラセックエキストラ）の症例 保有
+                                                                            </p>
+                                                                            <p>
+                                                                                - 韓国初のスマイル+角膜交差結合術（スマイルエキストラ）の症例 保有
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="fourTwo" role="tabpanel"
+                                                            aria-labelledby="profile-tab">
+                                                            <div class="tab-content">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - 延世大学医学部首席奨学金（キムユスン奨学金）受賞(1994)
+                                                                            </p>
+                                                                            <p>
+                                                                                - アジア初の円錐角膜 / 角膜拡張症 The Lord of the
+                                                                                Keraring 受賞（2009）
+                                                                            </p>
+                                                                            <p>
+                                                                                - アジア初の円錐角膜 / 角膜拡張症 Master of Intacs
+                                                                                受賞（2011）
+                                                                            </p>
+                                                                            <p>
+                                                                                - アルティサン ベストスキル (2006), アルティフレックス
+                                                                                ベストスキル（2009）、
+                                                                                Honor Award（2008, 2011）
+                                                                            </p>
+                                                                            <p>
+                                                                                - ICL™ / TICL™ Excellent Surgeon（2007）
+                                                                            </p>
+                                                                            <p>
+                                                                                - アルティフレックス／トリックアルティフレックス Global
+                                                                                Instructor 受賞
+                                                                                （2012）
+                                                                            </p>
+                                                                            <p>
+                                                                                - 眼内レンズ挿入術 World’s Great Surgeon 受賞
+                                                                                （2012）, World Class pioneer 受賞 （2012）
+                                                                            </p>
+                                                                            <p>
+                                                                                - 世界最多の円錐角膜手術（インタックス）症例認証 : Global
+                                                                                Master of Intacs
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="fourThree" role="tabpanel"
+                                                            aria-labelledby="contact-tab">
+                                                            <div class="tab-content">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+
+                                                                            <p>
+                                                                                - レーザー角膜上皮切除加工形成術において、レーザー照射半径と移行部が
+                                                                                光学収差へ及ぼす影響
+                                                                                （J Korean Ophthalmol Soc. 2003 Jun;44（6）
+                                                                                : 1341 - 1345. Korean） 外 多数
+
+                                                                            </p>
+                                                                            <p>
+                                                                                - 円錐角膜および角膜拡張症治療の最新知見（大韓眼科医師会 学術大会
+                                                                                講演、2010）
+                                                                            </p>
+                                                                            <p>
+                                                                                - レーシック、ラセック手術後の角膜拡張症の治療方法（韓国屈折手術シンポジウム
+                                                                                KSCRS 講演、2012、2013）
+                                                                            </p>
+                                                                            <p>
+                                                                                - 円錐角膜の3重併用治療（欧州ESCRS学会講演、スペイン
+                                                                                Barcelona、2015）
+                                                                            </p>
+                                                                            <p>
+                                                                                - 角膜交差結合術による3重および2重併用治療の比較（角膜交差結合術学会
+                                                                                講演、アメリカ Boston 2015）
+                                                                            </p>
+                                                                            <p>
+                                                                                - ビジュマックスレーザーを用いた角膜拡張症の治療（カールツァイス
+                                                                                アジアパシフィック
+                                                                                学会、Bangkok 2016）
+                                                                            </p>
+                                                                            <p>
+                                                                                - アマリスREDシリウスとインタックスを用いた三重療法SCI論文発表
+                                                                                （2019）
+                                                                            </p>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <div class="doctor-slider-img">
+                                                <img src="assets/img/member/5.png" class="d-block w-100"
+                                                    alt="Slider Img">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <span class="doctor-slider-content">
+                                                <h4 class="heading-4">キムジンソン院長</h4>
+                                                <h6 class="heading-6">KIM JIN SUN, M.D</h6>
+                                            </span>
+                                            <div class="mission-tab-area padding-top-60">
+
+                                                <!-- <div class="col-lg-6 col-md-12"> -->
+                                                <div class="tab-navbar-area">
+                                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" id="home-tab" data-toggle="tab"
+                                                                href="#fiveOne" role="tab" aria-controls="home"
+                                                                aria-selected="true"># 略歴 [Profile]</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="profile-tab" data-toggle="tab"
+                                                                href="#fiveTwo" role="tab" aria-controls="profile"
+                                                                aria-selected="false"># 受賞歴 [Winning a Prize]</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="contact-tab" data-toggle="tab"
+                                                                href="#fiveThree" role="tab" aria-controls="contact"
+                                                                aria-selected="false"># 論文及び学会発表 [Writing and
+                                                                Conference]</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-content-area">
+                                                    <div class="tab-content" id="myTabContent">
+                                                        <div class="tab-pane fade show active" id="fiveOne"
+                                                            role="tabpanel" aria-labelledby="home-tab">
+                                                            <div class="tab-content row">
+                                                                <div class="col-lg-6 col-md-6">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - 延世大学医学部卒業
+                                                                            </p>
+                                                                            <p>
+                                                                                - セブランス病院インターン・研修医修了
+                                                                            </p>
+                                                                            <p>
+                                                                                - 延世大学大学院修士課程修了
+                                                                            </p>
+                                                                            <p>
+                                                                                - セブランス病院眼科専門医
+                                                                            </p>
+                                                                            <p>
+                                                                                - 延世大学校新村セブランス病院眼科角膜・前眼部専任医師
+                                                                            </p>
+                                                                            <p>
+                                                                                - コンヤン大学医学部金眼科病院角膜センター教授
+                                                                            </p>
+                                                                            <p>
+                                                                                - 延世大学ドリーム眼科院長
+                                                                            </p>
+                                                                            <p>
+                                                                                - 欧州白内障屈折矯正手術学会（ESCRS）正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - アメリカ白内障屈折矯正手術学会（ASCRS）正会員
+                                                                            </p>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - 韓国白内障屈折手術学会（KSCRS）正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - 韓国外眼科学会 正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - オランダ オプテック社
+                                                                                アルティサン／アルティフレックスレンズ挿入術専門課程研修
+                                                                            </p>
+                                                                            <p>
+                                                                                - 老眼矯正白内障手術専門課程研修
+                                                                            </p>
+                                                                            <p>
+                                                                                - スヨンセ眼科 円錐角膜研究所 Head Researcher
+                                                                            </p>
+                                                                            <p>
+                                                                                - スヨンセ眼科副作用治療センター EX500レーザー及びAmaris Red
+                                                                                レーザー角膜地形切除術首席研究チーム長
+                                                                            </p>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="fiveTwo" role="tabpanel"
+                                                            aria-labelledby="profile-tab">
+                                                            <div class="tab-content">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - ICL™ / TICL™ GLOBAL Expert Surgeon
+                                                                            </p>
+                                                                            <p>
+                                                                                - オプテック社 アルティサン／アルティフレックス Best Skilled
+                                                                                User
+                                                                            </p>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="fiveThree" role="tabpanel"
+                                                            aria-labelledby="contact-tab">
+                                                            <div class="tab-content">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - Assessment of the tear film lipid
+                                                                                layer thickness after cataract surgery.
+                                                                                Semin Ophthalmol. 2016 Sep 14:1-6.
+
+                                                                            </p>
+                                                                            <p>
+                                                                                - Analysis of factors associated with
+                                                                                the
+                                                                                tear film lipid layer thickness in
+                                                                                normal eyes and patients with dry eye
+                                                                                syndrome. Invest Ophthalmol Vis Sci.
+                                                                                2016 Aug 1;57(10):4076-83
+                                                                            </p>
+                                                                            <p>
+                                                                                - Management of long-standing partially
+                                                                                torn and flipped laser in situ
+                                                                                keratomileusis flaps.
+                                                                                J Cataract Refract Surg. 2015
+                                                                                Fed;41(2):464-7.
+
+                                                                            </p>
+                                                                            <p>
+                                                                                - Evaluation of tear film lipid layer
+                                                                                thickness change after cataract surgery
+                                                                                2015念 奥州白内障屈折矯正手術学会（ESCRS）英語口演
+
+                                                                            </p>
+                                                                            <p>
+                                                                                - 白内障手術前後の涙液脂質層の変化分析
+                                                                                2015年 大韓眼科学会第113回学術大会演説の他10編
+
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <div class="doctor-slider-img">
+                                                <img src="assets/img/member/6.png" class="d-block w-100"
+                                                    alt="Slider Img">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <span class="doctor-slider-content">
+                                                <h4 class="heading-4">クォンケユン 院長</h4>
+                                                <h6 class="heading-6">KWON KYE YOON, M.D</h6>
+                                            </span>
+                                            <div class="mission-tab-area padding-top-60">
+                                                <!-- <div class="col-lg-6 col-md-12"> -->
+                                                <div class="tab-navbar-area">
+                                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" id="home-tab" data-toggle="tab"
+                                                                href="#sixOne" role="tab" aria-controls="home"
+                                                                aria-selected="true"># 略歴 [Profile]</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="profile-tab" data-toggle="tab"
+                                                                href="#sixTwo" role="tab" aria-controls="profile"
+                                                                aria-selected="false"># 受賞歴 [Winning a Prize]</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="contact-tab" data-toggle="tab"
+                                                                href="#sixThree" role="tab" aria-controls="contact"
+                                                                aria-selected="false"># 論文及び学会発表 [Writing and
+                                                                Conference]</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-content-area">
+                                                    <div class="tab-content" id="myTabContent">
+                                                        <div class="tab-pane fade show active" id="sixOne"
+                                                            role="tabpanel" aria-labelledby="home-tab">
+                                                            <div class="tab-content row">
+                                                                <div class="col-lg-6 col-md-6">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - 延世大学医学部卒業
+                                                                            </p>
+                                                                            <p>
+                                                                                - セブランス病院インターン・研修医修了
+                                                                            </p>
+
+                                                                            <p>
+                                                                                - セブランス病院眼科専門医
+                                                                            </p>
+                                                                            <p>
+                                                                                - 明るい目眼科院長
+                                                                            </p>
+                                                                            <p>
+                                                                                - 欧州白内障屈折矯正手術学会（ESCRS）正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - アメリカ白内障屈折矯正手術学会（ASCRS）正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - 韓国白内障屈折矯正手術学会（KSCRS）正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - 韓国コンタクトレンズ研究会（KCLS）正会員
+                                                                            </p>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - 大韓眼科学会 正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - オランダ オプテック社 アルティフレックスレンズ挿入術専門課程研修
+                                                                            </p>
+                                                                            <p>
+                                                                                - アメリカSTAAR社Visian ICLレンズ挿入術専門課程 研修
+                                                                            </p>
+                                                                            <p>
+                                                                                - 老眼矯正白内障手術専門課程研修
+                                                                            </p>
+                                                                            <p>
+                                                                                - 円錐角膜研究所 角膜拡張症併用治療及びVisuMax、TFC
+                                                                                SMILE研究チーム Head Researcher
+                                                                            </p>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="sixTwo" role="tabpanel"
+                                                            aria-labelledby="profile-tab">
+                                                            <div class="tab-content">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - ICL™ / TICL™ GLOBAL Expert Surgeon
+                                                                            </p>
+                                                                            <p>
+                                                                                - オプテック社 アルティフレックス Certificate of
+                                                                                Advanced
+                                                                                Surgeon
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="sixThree" role="tabpanel"
+                                                            aria-labelledby="contact-tab">
+                                                            <div class="tab-content">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - Inhibition of recurrence of epithelial
+                                                                                ingrowth with an amniotic membrane
+                                                                                pressure
+                                                                                patch to a laser in situ keratomileusis
+                                                                                flap with a central stellate laceration:
+                                                                                a case report.
+
+                                                                            </p>
+                                                                            <p>
+                                                                                （BMC Ophthalmol. 2016 Jul 18;16:111.
+                                                                                doi: 10.1186/s12886-016-0291-4.）
+                                                                            </p>
+                                                                            <p>
+                                                                                - Long-Term Outcome of Combined Lateral
+                                                                                Tarsal Strip With Temporal Permanent
+                                                                                Tarsorrhaphy for Correction of Paralytic
+                                                                                Ectropion Caused By Facial Nerve Palsy.
+
+                                                                            </p>
+                                                                            <p>
+                                                                                （J Craniofac Surg. 2015
+                                                                                Jul;26（5）:e409-12.）
+                                                                            </p>
+                                                                            <p>
+                                                                                Treatment Outcome of Triple Procedure in
+                                                                                Open-Angle Glaucoma and Angle-Closure
+                                                                                Glaucoma
+                                                                                開放隅角緑内障患者と閉塞隅角緑内障患者における緑内障三重手術の有効性
+
+                                                                            </p>
+                                                                            <p>
+                                                                                （J Korean Opthalmol Soc 2015 ;56（7）:
+                                                                                1075-80）
+                                                                            </p>
+                                                                            <p>
+                                                                                Optic Neuritis Mimicking Ischemic Optic
+                                                                                Neuropathy and Optic Glioma
+                                                                                虚血性視神経障害および視神経膠腫に類似した所見を示す視神経炎
+
+                                                                            </p>
+                                                                            <p>
+                                                                                （J Korean Ophthalmol Soc 2014
+                                                                                ;55（11）:1721-5）の他 5編
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <div class="doctor-slider-img">
+                                                <img src="assets/img/member/7.png" class="d-block w-100"
+                                                    alt="Slider Img">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <span class="doctor-slider-content">
+                                                <h4 class="heading-4">キムヒョジョン院長</h4>
+                                                <h6 class="heading-6">KIM HYO JEONG, M.D</h6>
+                                            </span>
+                                            <div class="mission-tab-area padding-top-60">
+                                                <!-- <div class="col-lg-6 col-md-12"> -->
+                                                <div class="tab-navbar-area">
+                                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" id="home-tab" data-toggle="tab"
+                                                                href="#sevenOne" role="tab" aria-controls="home"
+                                                                aria-selected="true"># 略歴 [Profile]</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="profile-tab" data-toggle="tab"
+                                                                href="#sevenTwo" role="tab" aria-controls="profile"
+                                                                aria-selected="false"># 受賞歴 [Winning a Prize]</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="contact-tab" data-toggle="tab"
+                                                                href="#sevenThree" role="tab" aria-controls="contact"
+                                                                aria-selected="false"># 論文及び学会発表 [Writing and
+                                                                Conference]</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-content-area">
+                                                    <div class="tab-content" id="myTabContent">
+                                                        <div class="tab-pane fade show active" id="sevenOne"
+                                                            role="tabpanel" aria-labelledby="home-tab">
+                                                            <div class="tab-content row">
+                                                                <div class="col-lg-6 col-md-6">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - ソンギュンガン大学医学専門大学院卒業
+                                                                            </p>
+                                                                            <p>
+                                                                                - サムスンソウル病院インターン、レジデント修了
+                                                                            </p>
+                                                                            <p>
+                                                                                - サムスンソウル病院 眼科専門医
+                                                                            </p>
+                                                                            <p>
+                                                                                - 明るい眼科院長
+                                                                            </p>
+                                                                            <p>
+                                                                                - 欧州白内障屈折矯正手術学会（ESCRS）正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - アメリカ白内障屈折矯正手術学会（ASCRS）正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - 韓国白内障屈折矯正手術学会（KSCRS）正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - 韓国コンタクトレンズ研究会（KCLS）正会員
+                                                                            </p>
+                                                                            <p>
+                                                                                - 大韓眼科学会 正会員
+                                                                            </p>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - サムスンソウル病院 サムスン生命科学研究所研修
+                                                                            </p>
+                                                                            <p>
+                                                                                - イギリス NHS Moorfields Eye Hospital 海外研修
+                                                                            </p>
+                                                                            <p>
+                                                                                - オランダ オプテック社 アルティフレックスレンズ挿入術専門課程研修
+                                                                            </p>
+                                                                            <p>
+                                                                                - アメリカSTAAR社Visian ICLレンズ挿入術専門課程 研修
+                                                                            </p>
+                                                                            <p>
+                                                                                - 老眼矯正白内障手術専門課程研修
+                                                                            </p>
+                                                                            <p>
+                                                                                - 円錐角膜研究所 角膜拡張症併用治療及びVisuMax、TFC
+                                                                                SMILE研究チーム Head Researcher
+                                                                            </p>
+                                                                            <p>
+                                                                                - TFC SMILE Best Skilled Surgeon
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="sevenTwo" role="tabpanel"
+                                                            aria-labelledby="profile-tab">
+                                                            <div class="tab-content">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - ICL™ / TICL™ GLOBAL Expert Surgeon
+                                                                            </p>
+                                                                            <p>
+                                                                                - オプテック社 アルティフレックス Certificate of
+                                                                                Advanced
+                                                                                Surgeon
+                                                                            </p>
+                                                                            <p>
+                                                                                - サムスンソウル病院インターン首席
+                                                                            </p>
+                                                                            <p>
+                                                                                - サムスンソウル病院眼科最優秀専攻医
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="sevenThree" role="tabpanel"
+                                                            aria-labelledby="contact-tab">
+                                                            <div class="tab-content">
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="paragraph-wrap">
+                                                                        <div class="paragraph-area padding-30">
+                                                                            <p>
+                                                                                - Predictors of neovascular activity
+                                                                                during neovascular age-related macular
+                                                                                degeneration treatment based on optical
+                                                                                coherence tomography angiography
+                                                                                （Scientific Reports, 2019）
+
+                                                                            </p>
+                                                                            <p>
+                                                                                Comparison of two swept-source optical
+                                                                                coherence tomography biometers and
+                                                                                a partial coherence interferometer（PLos
+                                                                                ONE, 2019）
+
+                                                                            </p>
+                                                                            <p>
+                                                                                - Association of Optic Neuritis with
+                                                                                Neuromyelitis Optica Spectrum Disorder
+                                                                                and
+                                                                                Multiple Sclerosis in Korea （KJO, 2019）
+
+                                                                            </p>
+                                                                            <p>
+                                                                                Clinical characteristics according to
+                                                                                the laterality of ocular torsion in
+                                                                                unilateral superior oblique palsy （BMC
+                                                                                Ophthalmology, 2018） の他 4編
+
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--// Carouse Item-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Carousel Indicators -->
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"> <i class="fas fa-chevron-left"></i> </span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"> <i class="fas fa-chevron-right"></i>
+                </span>
+            </a>
+        </section>
+        <!--Statistics Section End Here-->
+
+        <!--Appointment Section Start Here-->
+        <section class="about-our-doctor our-doctor padding-100" id="comment">
+            <div class="container-fluid px-0">
+                <div class="container">
+                    <div class="row">
+                        <!--Common Title-->
+                        <div class="col-lg-9">
+                            <div class="common-title padding-bottom-40">
+                                <h2 class="heading">患者様の口コミ</h2>
+                            </div>
+                        </div>
+                        <div class="col-10 about-doctor px-lg-0">
+                            <div id="commentPageDoctorIndicators" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="col-lg-5 col-md-12">
+                                            <div class="slider-content">
+                                                <h4 class="heading-04">チョウ**様</h4>
+                                                <h6 class="heading-06">アルティフレックス レンズ挿入術</h6>
+
+                                                <p>"レンズやメガネを通して見ていた世界とは、一つから十まで本当に違うように感じます。より明るく鮮明に見え、
+                                                    美しくすべてを見ることができ、とても幸せです。"</p>
+                                                <!-- Accordion Wrapper Start Here -->
+                                                <div class="accordion-wrapper">
+                                                    <div id="accordion">
+                                                        <div class="card">
+                                                            <div class="card-header" id="headingOne">
+                                                                <h5 class="mb-0">
+                                                                    <a role="button" data-toggle="collapse"
+                                                                        data-target="#collapseOne" aria-expanded="true"
+                                                                        aria-controls="collapseOne">
+                                                                        Improvement Figures
+                                                                    </a>
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapseOne" class="collapse show"
+                                                                aria-labelledby="headingOne" data-parent="#accordion">
+                                                                <div class="card-body">
+                                                                    <img src="assets/img/japan/cho.png">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-12 slider-img px-0"
+                                            style="background-image: url(assets/img/japan/tes2.png);">
+                                        </div>
+                                    </div>
+                                    <!--// Carousel Item one-->
+                                    <div class="carousel-item">
+                                        <div class="col-lg-5 col-md-12">
+                                            <div class="slider-content">
+                                                <h4 class="heading-04">俳優のキムヨンジェ様</h4>
+                                                <h6 class="heading-06">ラセック手術</h6>
+
+                                                <p>"術前の検査から術後のケアまで完璧な準備、手術、そして管理。すべての過程が完璧でした。 本当にありがとうございます。"
+                                                </p>
+                                                <!-- Accordion Wrapper Start Here -->
+                                                <div class="accordion-wrapper">
+                                                    <div id="accordionTwo">
+                                                        <div class="card">
+                                                            <div class="card-header" id="headingTowOne">
+                                                                <h5 class="mb-0">
+                                                                    <a role="button" data-toggle="collapse"
+                                                                        data-target="#collapseTowOne"
+                                                                        aria-expanded="true"
+                                                                        aria-controls="collapseTowOne">
+                                                                        Improvement Figures
+                                                                    </a>
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapseTowOne" class="collapse show"
+                                                                aria-labelledby="headingTowOne"
+                                                                data-parent="#accordionTwo">
+                                                                <div class="card-body">
+                                                                    <img src="assets/img/japan/kim.png">
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-12 slider-img px-0"
+                                            style="background-image: url(assets/img/testimonials/22.png)">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-lg-5 col-md-12">
+                                            <div class="slider-content">
+                                                <h4 class="heading-04">俳優のペクソンヒョン様</h4>
+                                                <h6 class="heading-06">レーシック手術</h6>
+
+                                                <p>"開眼していきます。手術をしてから、世界が透明で鮮明で美しく見えますね！ ありがとうございます。"</p>
+                                                <!-- Accordion Wrapper Start Here -->
+                                                <div class="accordion-wrapper">
+                                                    <div id="accordionThree">
+                                                        <div class="card">
+                                                            <div class="card-header" id="headingThreeOne">
+                                                                <h5 class="mb-0">
+                                                                    <a role="button" data-toggle="collapse"
+                                                                        data-target="#collapseThreeOne"
+                                                                        aria-expanded="true"
+                                                                        aria-controls="collapseThreeOne">
+                                                                        Improvement Figures
+                                                                    </a>
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapseThreeOne" class="collapse show"
+                                                                aria-labelledby="headingThreeOne"
+                                                                data-parent="#accordionThree">
+                                                                <div class="card-body">
+                                                                    <img src="assets/img/japan/paek.png">
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-12 slider-img px-0"
+                                            style="background-image: url(assets/img/testimonials/33.png)">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-lg-5 col-md-12">
+                                            <div class="slider-content">
+                                                <h4 class="heading-04">ムン**様</h4>
+                                                <h6 class="heading-06">円錐角膜手術</h6>
+                                                <p>インタックス + AMARIS RED シリウス角膜地形切削 +
+                                                    CXL（コラーゲン交差結合術）</p>
+                                                <p>"正確に物体が見えないので、日常生活するのに手術するまではとても不便で怖かったです。 スヨンセで院長を
+                                                    信じて処方に従っていただければ、私のように早く日常生活に復帰するのに問題ないと思います。"</p>
+                                                <!-- Accordion Wrapper Start Here -->
+                                                <div class="accordion-wrapper">
+                                                    <div id="accordionFour">
+                                                        <div class="card">
+                                                            <div class="card-header" id="headingFourOne">
+                                                                <h5 class="mb-0">
+                                                                    <a role="button" data-toggle="collapse"
+                                                                        data-target="#collapseFourOne"
+                                                                        aria-expanded="true"
+                                                                        aria-controls="collapseFourOne">
+                                                                        Improvement Figures
+                                                                    </a>
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapseFourOne" class="collapse show"
+                                                                aria-labelledby="headingFourOne"
+                                                                data-parent="#accordionFour">
+                                                                <div class="card-body">
+                                                                    <img src="assets/img/japan/moon.png">
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-12 slider-img px-0"
+                                            style="background-image: url(assets/img/japan/tes1.png)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Carousel Indicators -->
+                <a class="carousel-control-prev" href="#commentPageDoctorIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"> <i class="fas fa-chevron-left"></i>
+                    </span>
+                </a>
+                <a class="carousel-control-next" href="#commentPageDoctorIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"> <i class="fas fa-chevron-right"></i>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <section class="appointment-section padding-top-80 padding-bottom-100" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="common-title padding-bottom-50">
+                            <h2 class="heading">お問い合わせ</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 px-4">
+                        <div class="appointment-content">
+                            <div class="tab-content">
+                                <div class="appointment-form-area">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <input type="text" name="your_name" placeholder="姓名をご記入ください。"
+                                                    class="form-control margin-15">
+                                                <input type="email" name="your_email" placeholder="連絡先をご記入ください。"
+                                                    class="form-control margin-15">
+                                                <div class="custom-select margin-15">
+                                                    <select>
+                                                        <option>== 興味のある分野を選択 ==</option>
+                                                        <option>スマイルラシック</option>
+                                                        <option>眼内レンズ挿入術</option>
+                                                        <option>円錐角膜</option>
+                                                        <option>ラセック</option>
+                                                        <option>レーシック</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="custom-select margin-15">
+                                                    <select>
+                                                        <option selected>== 性別 ==</option>
+                                                        <option>Male</option>
+                                                        <option>Female</option>
+                                                    </select>
+                                                </div>
+                                                <div class="calendar-icon margin-15">
+                                                    <span class="calendar">
+                                                        <label for="datepicker2">
+                                                            <input type="text" id="datepicker2" class="form-control"
+                                                                autocomplete="off"
+                                                                placeholder="ご希望のカウンセリング時間を選択してください。">
+                                                        </label>
+                                                    </span>
+                                                    <span class="icon"><i class="fas fa-calendar-week"></i></span>
+                                                </div>
+                                                <div class="custom-select margin-15">
+                                                    <select>
+                                                        <option selected>Department</option>
+                                                        <option>Department</option>
+                                                        <option>Department</option>
+                                                        <option>Department</option>
+                                                        <option>Department</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-btn-wrap style-02">
+                                            <input class="main-btn" type="submit" value="お問い合わせ">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="google-map-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 px-0">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.225293867276!2d127.02216217587082!3d37.50260417205507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca158bb087887%3A0xf5c6745a2c8df0bd!2z7ISc7Jq47Yq567OE7IucIOyEnOy0iOq1rCDshJzstIjrjIDroZw3N-q4uCA1NA!5e0!3m2!1sko!2skr!4v1696393758575!5m2!1sko!2skr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// Google Map End-->
+
+    </main>
+    <!--Main Area End Here-->
+
+    <th:block th:fragment="jpFooter">
+	    <footer class="footer-area">
+	        <div class="footer-top">
+	            <div class="container-fluid">
+	                <div class="row">
+	                    <div class="col-lg-4 col-md-12">
+	                        <div class="footer-widget widget logo-widget">
+	                            <a href="#">
+	                                <img width="250px" src="assets/img/logo.png" alt="Nav Logo">
+	                            </a>
+	                            <ul>
+	                                <li>
+	                                    <span class="icon"><i class="far fa-envelope"></i></span>hshy89@hanmail.net
+	                                </li>
+	                                <li>
+	                                    <span class="icon"><i class="fas fa-phone"></i></span>02-2258-0077
+	                                </li>
+	                                <li>
+	                                    <span class="icon"> <i class="fas fa-map-marker-alt"></i></span>事業者登録番号
+	                                </li>
+	                            </ul>
+	                            <div class="footer-social-icon">
+	                                <a class="icon" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+	                                <a class="icon" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+	                                <a class="icon" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-lg-4 col-md-6">
+	                        <div class="footer-widget widget widget_nav_menu">
+	                            <h4 class="widget-title">Contact US</h4>
+	                            <ul>
+	                                <li><a href="#">ソウル市ソチョ区ソチョ大路77ギル54、ソチョWタワー 5階</a></li>
+	                                <li><a href="#">(ソウル市ソチョ区ソチョ洞 1303-37 Wタワー 5階)</a></li>
+	                                <li><a href="#"> スヨンセ眼科</a></li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                    <div class="col-lg-4 col-md-6">
+	                        <div class="footer-widget widget widget_nav_menu">
+	                            <h4 class="widget-title">By Airplane</h4>
+	                            <ul>
+	                                <li><a href="#"># 金浦空港 9号線 金浦空港駅 -> 新ノンヒョン駅下車（8番出口、徒歩5分）</a></li>
+	                                <li><a href="#"># 仁川国際空港鉄道仁川空港ターミナル駅 -> 9号線 金浦空港駅で乗り換え </a></li>
+	                                <li><a href="#">-> 新ノンヒョン駅下車（8番出口、徒歩5分）</a></li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	
+	                </div>
+	            </div>
+	        </div>
+	        <div class="copyright-area">
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-lg-12">
+	                        <div class="copyright-area-inner">
+	                            &copy; Copyright ATTRACTIONs - Made with <span class="coypright-icon"><i
+	                                    class="fas fa-heart"></i></span> by
+	                            <a href="http://www.atrt.co.kr/" target="_blank">ATTRACTIONs</a>.
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </footer>
+	
+	
+	    <div class="back-to-top">
+	        <span class="back-top"><i class="flaticon-up-arrow"></i></span>
+	    </div>
+	</th:block>
+
+
+
+</body>
+
+</html>
